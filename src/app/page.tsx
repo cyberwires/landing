@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { prefix } from "./prefix";
 
 const companies = [
   { name: "SPAcademy", logo: "/sp-logo.png", width: 50, height: 50 },
@@ -16,10 +17,10 @@ export default function Home() {
       >
         {/* Content */}
         <div className="w-full h-full absolute top-270 right-100 z-0 md:right-250 md:top-360">
-          <Image src="/lines.png" alt={""} fill priority />
+          <Image src={`${prefix}/lines.png`} alt={""} fill priority />
         </div>
         <div className="w-full h-full absolute top-20 z-0">
-          <Image src="/lines2.png" alt={""} fill priority />
+          <Image src={`${prefix}/lines2.png`} alt={""} fill priority />
         </div>
 
         <div className="flex flex-col justify-center items-center w-1/2 h-full bg-black/80 text-center z-20 rounded-r-3xl">
@@ -47,7 +48,7 @@ export default function Home() {
               >
                 <div className="flex items-center justify-center min-w-max h-24 mr-3">
                   <Image
-                    src={logo}
+                    src={`${prefix}${logo}`}
                     alt="logo"
                     width={width}
                     height={height}
