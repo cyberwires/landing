@@ -8,7 +8,7 @@ const menu = [
   { name: "Team", href: "/" },
   { name: "Our Projects", href: "/" },
   { name: "FAQ", href: "/" },
-  { name: "Contact Us", href: "/" },
+  // { name: "Contact Us", href: "/" },
 ];
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
     <header className="text-gray p-8 flex items-center justify-between gap-36 absolute left-1/2 z-10 w-[90%] top-[6rem] transform-1/2-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl">
       {/* Logo */}
       <div className="w-16 h-16">
-        <Image src="/logo.png" alt="logo" width={40} height={40} priority />
+        <Image src="./logo.png" alt="logo" width={40} height={40} priority />
       </div>
 
       {/* Desktop Navigation */}
