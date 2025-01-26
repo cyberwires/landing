@@ -10,6 +10,7 @@ export default {
     extend: {
       fontSize: {
         sm: ["1.2rem", { lineHeight: "1.5" }], // 12px
+        mm: ["1.4rem", { lineHeight: "1.5" }], // 16px
         base: ["1.6rem", { lineHeight: "1.5" }], // 16px
         lg: ["2rem", { lineHeight: "1.5" }], // 20px
         xl: ["2.4rem", { lineHeight: "1.5" }], // 24px
@@ -22,8 +23,10 @@ export default {
           "900": "var(--red-stone)",
           "300": "var(--red-stone-light)",
         },
+        "light-grey": "var(--light-grey)",
       },
       spacing: {
+        "500": "50rem",
         "360": "36rem", // 360px
         "270": "27rem", // 300px
         "250": "25rem", // 250px

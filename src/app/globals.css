@@ -12,6 +12,7 @@ html {
   --green: #24a556;
   --red-stone: #dd816d;
   --red-stone-light: #e2a294;
+  --light-grey: #F3F3F3;
 }
 
 @media (prefers-color-scheme: dark) {

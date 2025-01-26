@@ -1,10 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProjectCard from "./components/project-card/project-card";
 
 const companies = [
   { name: "SPAcademy", logo: "./sp-logo.png", width: 50, height: 50 },
   { name: "OJT-Logbook", logo: "./ojt-logo.png", width: 100, height: 50 },
   { name: "JTT", logo: "./jtt-logo.png", width: 50, height: 50 },
+];
+
+const projects = [
+  {
+    name: "Academy",
+    description: "Learning platform for people who are thriving for excellence",
+    stack: ["React", "Node", "AWS"],
+    link: "/academy",
+  },
+  {
+    name: "OJT-Logbook",
+    description:
+      "Time management platform that help people to track their progress",
+    stack: ["React", "Node", "AWS"],
+    link: "/ojt-logbook",
+  },
+  {
+    name: "JTT",
+    description:
+      "The thing we do not know much about but we will figure it out",
+    stack: ["PHP"],
+    link: "/join-the-trades",
+  },
 ];
 
 export default function Home() {
@@ -61,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="md:px-150">
+      <section className="md:px-150 mb-20">
         <div className="flex flex-wrap justify-center md:flex-nowrap">
           <div className="relative top-12 md:top-20 w-150 h-150 md:w-[321px] md:h-[333px] md:min-w-[321px] mr-5">
             <Image
@@ -86,10 +110,13 @@ export default function Home() {
               <Image src="./team-work-3.png" alt="logo" fill priority />
             </div>
           </div>{" "}
-          <div className="flex flex-col px-20 md:px-0 relative top-20 md:top-200">
-            <h1 className="text-green text-xl md:text-8xl mb-5 md:mb-14">
+          <div className="flex flex-col px-20 md:px-0 relative">
+            <div className="relative top-20 left-100 md:top-10 md:left-250 bottom-10 w-[196px] h-[207px]">
+              <Image src="./square.png" alt="logo" fill priority />
+            </div>
+            <h2 className="text-green text-xl md:text-8xl mb-5 md:mb-14">
               About us
-            </h1>
+            </h2>
             <p className="text-base md:text-lg">
               Concept Softworks is a software company, we develop custom built
               software for clients - covering everything from financial
@@ -97,6 +124,17 @@ export default function Home() {
               government organizations.
             </p>{" "}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-light-grey px-16 py-20">
+        <h2 className="text-green text-xl md:text-8xl mb-8 md:mb-24">
+          Our Projects
+        </h2>
+        <div className="flex flex-wrap md:flex-nowrap gap-10">
+          {projects.map((project, index) => (
+            <ProjectCard data={project} key={index} />
+          ))}
         </div>
       </section>
     </>
