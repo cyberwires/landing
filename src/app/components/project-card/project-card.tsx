@@ -1,13 +1,9 @@
+import { ProjectData } from "@/app/types";
 import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardProps {
-  data: {
-    name: string;
-    description: string;
-    stack: string[];
-    link: string;
-  };
+  data: ProjectData;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
@@ -17,8 +13,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       <div className="relative w-full h-360 mb-7">
         {/* Tech Tags */}
         <div className="flex justify-end gap-5 relative z-10 p-5">
-          {data.stack.map((item) => (
-            <span className="bg-white text-black px-2 py-1 rounded-lg text-mm">
+          {data.stack.map((item, index) => (
+            <span
+              key={index}
+              className="bg-white text-black px-2 py-1 rounded-lg text-mm"
+            >
               {item}
             </span>
           ))}

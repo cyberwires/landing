@@ -1,34 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProjectCard from "./components/project-card/project-card";
+import CompanyProjects from "./projects/page";
+import { expertise } from "./utils";
 
 const companies = [
   { name: "SPAcademy", logo: "./sp-logo.png", width: 50, height: 50 },
-  { name: "OJT-Logbook", logo: "./ojt-logo.png", width: 100, height: 50 },
+  { name: "OJT-Logbook", logo: "./ojt-logo-full.png", width: 100, height: 50 },
   { name: "JTT", logo: "./jtt-logo.png", width: 50, height: 50 },
-];
-
-const projects = [
-  {
-    name: "Academy",
-    description: "Learning platform for people who are thriving for excellence",
-    stack: ["React", "Node", "AWS"],
-    link: "/academy",
-  },
-  {
-    name: "OJT-Logbook",
-    description:
-      "Time management platform that help people to track their progress",
-    stack: ["React", "Node", "AWS"],
-    link: "/ojt-logbook",
-  },
-  {
-    name: "JTT",
-    description:
-      "The thing we do not know much about but we will figure it out",
-    stack: ["PHP"],
-    link: "/join-the-trades",
-  },
 ];
 
 export default function Home() {
@@ -36,7 +14,7 @@ export default function Home() {
     <>
       <section
         className="relative w-full h-[83vh] bg-cover bg-center bg-no-repeat md:bg-cover overflow-hidden"
-        style={{ backgroundImage: "url('./background.jpg')" }}
+        style={{ backgroundImage: "url('/background.jpg')" }}
       >
         {/* Content */}
         <div className="w-full h-full absolute top-270 right-100 z-0 md:right-250 md:top-360">
@@ -88,13 +66,7 @@ export default function Home() {
       <section className="md:px-150 mb-20">
         <div className="flex flex-wrap justify-center md:flex-nowrap">
           <div className="relative top-12 md:top-20 w-150 h-150 md:w-[321px] md:h-[333px] md:min-w-[321px] mr-5">
-            <Image
-              src="./team-work-2.png"
-              alt="logo"
-              fill
-              priority
-              // className="relative top-20 h-fit mr-5 w-full"
-            />
+            <Image src="./team-work-2.png" alt="logo" fill priority />
           </div>
           <div className="w-max md:mr-20">
             <div className="relative mb-5 rounded-lg w-150 h-150 md:w-[321px] md:h-[292px]">
@@ -127,16 +99,59 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-light-grey px-16 py-20">
-        <h2 className="text-green text-xl md:text-8xl mb-8 md:mb-24">
-          Our Projects
-        </h2>
-        <div className="flex flex-wrap md:flex-nowrap gap-10">
-          {projects.map((project, index) => (
-            <ProjectCard data={project} key={index} />
-          ))}
+      <CompanyProjects />
+
+      <section className="bg-light-grey px-16 text-white pb-20">
+        <div className="relative bg-grey overflow-hidden rounded-3xl p-5 max-h-500">
+          <div className="relative -left-[2rem] w-[240px] h-[55px]">
+            <Image src="./curved-arrow-1.png" alt="logo" fill priority />
+          </div>
+
+          <div className="absolute top-[15rem] right-[55rem] hidden md:block w-[300px] h-[200px]">
+            <Image src="./curved-arrow-2.png" alt="logo" fill priority />
+          </div>
+
+          <div className="absolute -right-16 bottom-36 md:left-500 md:bottom-[2rem] w-[111px] h-[113px]">
+            <Image src="./green-ball.png" alt="logo" fill priority />
+          </div>
+
+          <div className="absolute top-0 left-250 bg-disabled opacity-40 w-[117px] h-full">
+            <Image src="./pixel-background.png" alt="logo" fill priority />
+          </div>
+
+          <div className="relative mt-20">
+            <h2 className="text-4xl md:text-8xl mb-20 md:mb-8 md:ml-150 max-w-md">
+              See what we can do for you
+            </h2>
+
+            <ul className="relative md:float-right md:bottom-200 -right-[2rem] text-lg md:w-500 md:text-5xl text-disabled ">
+              {expertise.map((item, index) => (
+                <li
+                  key={index}
+                  className="group transition-transform duration-300 hover:scale-105 hover:text-white md:mb-10"
+                >
+                  <Link href="#contact-us" className="block md:mb-10">
+                    {item}
+                  </Link>
+                  <hr className="border-disabled group-hover:border-white transition-colors duration-300" />
+                </li>
+              ))}
+            </ul>
+
+            <div className="relative md:top-[12rem] md:left-[130rem] w-20 h-20">
+              <Image src="./green-ball-1.png" alt="logo" fill priority />
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* <section className="bg-light-grey px-16 text-white">
+        <h2 className="text-green text-xl md:text-8xl mb-8 md:mb-24">
+          Our Team
+        </h2>
+
+        <TeamCard />
+      </section> */}
     </>
   );
 }

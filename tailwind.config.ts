@@ -24,14 +24,18 @@ export default {
           "300": "var(--red-stone-light)",
         },
         "light-grey": "var(--light-grey)",
+        grey: "var(--grey)",
+        disabled: "var(--disabled)",
       },
       spacing: {
         "500": "50rem",
         "360": "36rem", // 360px
-        "270": "27rem", // 300px
+        "300": "30rem", // 300px
+        "270": "27rem", // 270px
         "250": "25rem", // 250px
         "200": "20rem", // 200px
         "150": "15rem", // 150px
+        "120": "12rem", // 120px
         "100": "10rem", // 100px
         "75": "7.5rem", // 75px
       },
