@@ -138,7 +138,7 @@ export default function Home() {
               ))}
             </ul>
 
-            <div className="relative md:top-[12rem] md:left-[130rem] w-20 h-20">
+            <div className="relative md:top-[12rem] md:ml-auto w-20 h-20">
               <Image src="./green-ball-1.png" alt="logo" fill priority />
             </div>
           </div>
