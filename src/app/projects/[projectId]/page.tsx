@@ -52,8 +52,6 @@ const Project = async ({
       </ul>
 
       <CompanyProjects params={projectId as any} />
-
-      <ContactUs />
     </section>
   );
 };
