@@ -28,23 +28,11 @@ const Footer = () => {
       <div className="flex items-center justify-between">
         <p className="text-sm md:text-mm">All rights reserved ®</p>
         <div className="flex items-center gap-3">
-          <Link className="w-12 h-12" href="https://www.instagram.com/">
-            <Image
-              src="./instagram.png"
-              alt="logo"
-              width={40}
-              height={40}
-              priority
-            />
+          <Link className="relative w-12 h-12" href="https://www.instagram.com/">
+            <Image src="./instagram.png" alt="logo" fill priority />
           </Link>{" "}
-          <Link className="w-12 h-12" href="https://www.twitter.com/">
-            <Image
-              src="./twitter.png"
-              alt="logo"
-              width={40}
-              height={40}
-              priority
-            />
+          <Link className="relative w-12 h-12" href="https://www.twitter.com/">
+            <Image src="./twitter.png" alt="logo" fill priority />
           </Link>
         </div>
       </div>

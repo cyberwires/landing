@@ -3,6 +3,7 @@ import Link from "next/link";
 import CompanyProjects from "./projects/page";
 import { expertise } from "./utils";
 import ContactUs from "./components/contact-us/contact-us";
+import Faq from "./components/faq/faq";
 
 const companies = [
   { name: "SPAcademy", logo: "./sp-logo.png", width: 50, height: 50 },
@@ -145,6 +146,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Faq />
 
       <ContactUs />
 

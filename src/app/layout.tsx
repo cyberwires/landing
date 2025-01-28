@@ -10,8 +10,8 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Company",
-  description: "Dive into app development",
+  title: "Vertex Solutions",
+  description: "Efficient and fast app development for your business",
 };
 
 export default function RootLayout({
