@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <section
         className="relative w-full h-[83vh] bg-cover bg-center bg-no-repeat md:bg-cover overflow-hidden"
-        style={{ backgroundImage: "url('./background.jpg')" }}
+        style={{ backgroundImage: "url('../background.jpg')" }}
         id="home"
       >
         {/* Content */}

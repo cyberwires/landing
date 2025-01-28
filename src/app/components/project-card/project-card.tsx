@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
         </div>
         {/* Image */}
         <Image
-          src="./team-work-1.png"
+          src="../team-work-1.png"
           alt="logo"
           fill
           priority

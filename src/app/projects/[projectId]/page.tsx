@@ -1,6 +1,7 @@
 import { projects } from "@/app/utils";
 import Image from "next/image";
 import CompanyProjects from "../page";
+import ContactUs from "@/app/components/contact-us/contact-us";
 
 // Define the possible project IDs
 export const generateStaticParams = async () => {
@@ -51,6 +52,8 @@ const Project = async ({
       </ul>
 
       <CompanyProjects params={projectId as any} />
+
+      <ContactUs />
     </section>
   );
 };

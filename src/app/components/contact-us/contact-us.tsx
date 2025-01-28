@@ -8,8 +8,11 @@ const ContactUs = () => {
     console.log("Form");
   };
   return (
-    <section className="md:flex md:gap-36 bg-light-grey px-16 text-white pb-20">
-      <div>
+    <section
+      className="md:flex md:gap-36 bg-light-grey px-16 text-white pb-20"
+      id="contact-us"
+    >
+      <div className="mb-10 md:mb-0">
         <h2 className="text-green text-4xl md:text-8xl mb-20 md:mb-8">
           Contact Us!
         </h2>
@@ -38,12 +41,17 @@ const ContactUs = () => {
           </button>
         </form>
       </div>
-      <div className="mt-auto">
-        <p className="text-black">Phone</p>
-        <p className="text-black">+1 (833) 520-3712</p>
+      <div className="mt-auto md:mb-75">
+        <p className="text-black text-mm md:text-lg text-disabled">Phone</p>
+        <p className="text-black text-mm md:text-lg mb-5 md:mb-12">
+          +1 (833) 520-3712
+        </p>
 
-        <p className="text-black">Email</p>
-        <Link href={""} className="text-black">
+        <p className="text-black text-mm md:text-lg text-disabled">Email</p>
+        <Link
+          href="mailto:malenkaodeskakantorka@gmail.com"
+          className="text-black text-mm md:text-lg"
+        >
           malenkaodeskakantorka@gmail.com
         </Link>
       </div>

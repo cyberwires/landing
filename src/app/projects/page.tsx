@@ -1,3 +1,4 @@
+import ContactUs from "../components/contact-us/contact-us";
 import Projects from "../components/projects/projects";
 
 interface CompanyProjectsProps {
@@ -8,6 +9,8 @@ const CompanyProjects: React.FC<CompanyProjectsProps> = ({ params }) => {
   return (
     <section className="pt-100" id="projects">
       <Projects id={params} />
+
+      <ContactUs />
     </section>
   );
 };
