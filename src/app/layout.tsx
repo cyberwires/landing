@@ -10,8 +10,8 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Choosing Company",
-  description: "We strive for excellent but it is what it is",
+  title: "Company",
+  description: "Dive into app development",
 };
 
 export default function RootLayout({
