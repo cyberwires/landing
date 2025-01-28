@@ -21,7 +21,7 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section className="bg-light-grey px-16 text-black pb-20">
+    <section className="bg-light-grey px-16 text-black pb-20" id="faq">
       <div className="flex flex-col">
         <div className="relative mx-auto mb-5 w-100 h-100">
           <Image src="./logo.png" alt="logo" fill priority />
@@ -34,7 +34,7 @@ const Faq = () => {
         </p>
       </div>
 
-      <div className="w-full mx-auto space-y-4">
+      <div className="max-w-6xl mx-auto space-y-4">
         {faqs.map((item, index) => (
           <FaqItem key={index} data={item} />
         ))}

@@ -1,11 +1,9 @@
 export const menu = [
-  { name: "Home", href: "/" },
-  { name: "Team", href: "/" },
+  { name: "Home", href: "#home" },
+  { name: "Team", href: "#team" },
   { name: "Our Projects", href: "#projects" },
-  { name: "FAQ", href: "/" },
-  // { name: "Contact Us", href: "/" },
+  { name: "FAQ", href: "#faq" },
 ];
-
 
 export const projects = [
   {
