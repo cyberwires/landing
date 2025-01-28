@@ -1,3 +1,7 @@
+import sp_logo from "../../public/sp-logo.png";
+import ojt_logo from "../../public/ojt-logo-full.png";
+import jtt_logo from "../../public/jtt-logo.png";
+
 export const menu = [
   { name: "Home", href: "/#home" },
   { name: "Team", href: "/#team" },
@@ -11,14 +15,14 @@ export const projects = [
     description: "Learning platform for people who are thriving for excellence",
     stack: ["React", "Node", "AWS"],
     link: "/projects/academy",
-    logo: "../sp-logo.png",
+    logo: sp_logo,
   },
   {
     name: "OJT-Logbook",
     description: `"Time management platform that help people to track their progress"`,
     stack: ["React", "Node", "AWS"],
     link: "/projects/ojt-logbook",
-    logo: "../ojt-logo-full.png",
+    logo: ojt_logo,
   },
   {
     name: "Join The Trades",
@@ -26,7 +30,7 @@ export const projects = [
       "The thing we do not know much about but we will figure it out",
     stack: ["PHP"],
     link: "/projects/join-the-trades",
-    logo: "../jtt-logo.png",
+    logo: jtt_logo,
   },
 ];
 

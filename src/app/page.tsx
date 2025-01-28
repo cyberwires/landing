@@ -4,11 +4,14 @@ import CompanyProjects from "./projects/page";
 import { expertise } from "./utils";
 import ContactUs from "./components/contact-us/contact-us";
 import Faq from "./components/faq/faq";
+import sp_logo from "../../public/sp-logo.png";
+import ojt_logo from "../../public/ojt-logo-full.png";
+import jtt_logo from "../../public/jtt-logo.png";
 
 const companies = [
-  { name: "SPAcademy", logo: "./sp-logo.png", width: 50, height: 50 },
-  { name: "OJT-Logbook", logo: "./ojt-logo-full.png", width: 100, height: 50 },
-  { name: "JTT", logo: "./jtt-logo.png", width: 50, height: 50 },
+  { name: "SPAcademy", logo: sp_logo, width: 50, height: 50 },
+  { name: "OJT-Logbook", logo: ojt_logo, width: 100, height: 50 },
+  { name: "JTT", logo: jtt_logo, width: 50, height: 50 },
 ];
 
 export default function Home() {
@@ -16,7 +19,7 @@ export default function Home() {
     <>
       <section
         className="relative w-full h-[83vh] bg-cover bg-center bg-no-repeat md:bg-cover overflow-hidden"
-        style={{ backgroundImage: "url('../background.jpg')" }}
+        style={{ backgroundImage: "url('./background.jpg')" }}
         id="home"
       >
         {/* Content */}
