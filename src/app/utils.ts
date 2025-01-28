@@ -1,3 +1,12 @@
+export const menu = [
+  { name: "Home", href: "/" },
+  { name: "Team", href: "/" },
+  { name: "Our Projects", href: "#projects" },
+  { name: "FAQ", href: "/" },
+  // { name: "Contact Us", href: "/" },
+];
+
+
 export const projects = [
   {
     name: "Academy",

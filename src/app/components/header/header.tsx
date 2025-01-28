@@ -2,14 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { menu } from "@/app/utils";
 
-const menu = [
-  { name: "Home", href: "/" },
-  { name: "Team", href: "/" },
-  { name: "Our Projects", href: "#projects" },
-  { name: "FAQ", href: "/" },
-  // { name: "Contact Us", href: "/" },
-];
 
 export default function Header() {
   const [open, setOpen] = useState<boolean>(false);

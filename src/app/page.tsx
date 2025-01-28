@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CompanyProjects from "./projects/page";
 import { expertise } from "./utils";
+import ContactUs from "./components/contact-us/contact-us";
 
 const companies = [
   { name: "SPAcademy", logo: "./sp-logo.png", width: 50, height: 50 },
@@ -144,6 +145,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ContactUs />
 
       {/* <section className="bg-light-grey px-16 text-white">
         <h2 className="text-green text-xl md:text-8xl mb-8 md:mb-24">
