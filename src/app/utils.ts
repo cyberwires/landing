@@ -1,6 +1,9 @@
 import sp_logo from "../../public/sp-logo.png";
 import ojt_logo from "../../public/ojt-logo-full.png";
 import jtt_logo from "../../public/jtt-logo.png";
+import learning from "../../public/technician-learning.jpg";
+import working from "../../public/tech-working.png";
+import searching from "../../public/job-search.jpg";
 
 export const menu = [
   { name: "Home", href: "/#home" },
@@ -16,6 +19,7 @@ export const projects = [
     stack: ["React", "Node", "AWS"],
     link: "/projects/academy",
     logo: sp_logo,
+    background: learning,
   },
   {
     name: "OJT-Logbook",
@@ -23,6 +27,7 @@ export const projects = [
     stack: ["React", "Node", "AWS"],
     link: "/projects/ojt-logbook",
     logo: ojt_logo,
+    background: working,
   },
   {
     name: "Join The Trades",
@@ -31,6 +36,7 @@ export const projects = [
     stack: ["PHP"],
     link: "/projects/join-the-trades",
     logo: jtt_logo,
+    background: searching,
   },
 ];
 

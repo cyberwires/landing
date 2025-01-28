@@ -1,4 +1,3 @@
-import ContactUs from "../components/contact-us/contact-us";
 import Projects from "../components/projects/projects";
 
 interface CompanyProjectsProps {
