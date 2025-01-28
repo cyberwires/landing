@@ -6,10 +6,10 @@ import working from "../../public/tech-working.png";
 import searching from "../../public/job-search.jpg";
 
 export const menu = [
-  { name: "Home", href: "/#home" },
-  { name: "Team", href: "/#team" },
-  { name: "Our Projects", href: "/#projects" },
-  { name: "FAQ", href: "/#faq" },
+  { name: "Home", href: "/" },
+  { name: "Team", href: "#team" },
+  { name: "Our Projects", href: "#projects" },
+  { name: "FAQ", href: "#faq" },
 ];
 
 export const projects = [

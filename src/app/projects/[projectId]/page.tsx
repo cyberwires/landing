@@ -42,15 +42,18 @@ const Project = async ({
         <Image src={logo} alt="logo" fill priority />
       </div>
 
-      <p className="text-mm md:text-4xl text-center">{description}</p>
+      <p className="text-mm md:text-4xl text-center mb-10">{description}</p>
 
-      <h3 className="text-4xl md:text-4xl">Tech Stack:</h3>
-      <ul>
-        {stack.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-
+      <div className="flex justify-center gap-5">
+        <h3 className="text-base md:text-4xl">Tech Stack:</h3>
+        <ul className="flex gap-3">
+          {stack.map((item, index) => (
+            <li className="text-mm md:text-base border-2 rounded-xl px-4 text-center" key={index}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
       <CompanyProjects params={projectId as any} />
     </section>
   );
