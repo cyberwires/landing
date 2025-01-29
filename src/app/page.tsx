@@ -39,7 +39,8 @@ export default function Home() {
 
           <Link
             href="#contact-us"
-            className="block md:hidden text-base bg-red-stone-900 z-10 px-4 py-2 rounded-lg hover:bg-red-stone-300"
+            className="block md:hidden text-base bg-red-stone-900 px-4 py-2 rounded-lg hover:bg-red-stone-300"
+            style={{ zIndex: "9" }}
           >
             Contact Us
           </Link>

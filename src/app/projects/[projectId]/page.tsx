@@ -32,7 +32,7 @@ const Project = async ({
   const { name, description, logo, stack } = project ?? defaultProject;
 
   return (
-    <section className="pt-150 bg-light-grey">
+    <section className="pt-150 bg-light-grey text-black">
       <h2 className="text-5xl md:text-8xl capitalize text-center mb-12">
         {name}
       </h2>
