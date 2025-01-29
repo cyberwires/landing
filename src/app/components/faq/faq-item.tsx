@@ -28,7 +28,7 @@ export const FaqItem = ({
           isOpen ? "max-h-96 opacity-100 p-4" : "max-h-0 opacity-0 p-0"
         } overflow-hidden`}
       >
-        <p className="text-gray-700 text-mm md:text-base">{answer}</p>
+        <p className="text-gray-700 text-mm lg:text-base">{answer}</p>
       </div>
     </div>
   );

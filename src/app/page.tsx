@@ -21,7 +21,7 @@ export default function Home() {
       <Hero />
       <section>
         <div className="flex justify-center p-8 relative bottom-20 bg-white w-max m-auto min-250 rounded-3xl">
-          <ul className="md:flex gap-20">
+          <ul className="lg:flex gap-20">
             {companies.map(({ name, logo, width, height }, index) => (
               <li
                 className="flex justify-between items-center text-black text-center min-w-max"
@@ -36,20 +36,20 @@ export default function Home() {
                     priority
                   />
                 </div>
-                <p className="font-bold text-2xl md:text-3xl">{name}</p>
+                <p className="font-bold text-2xl lg:text-3xl">{name}</p>
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      <section className="md:px-150 mb-20" id="team">
-        <div className="flex flex-wrap justify-center md:flex-nowrap max-w-2000 mx-auto">
-          <div className="relative top-12 md:top-20 w-150 h-150 md:w-[321px] md:h-[333px] md:min-w-[321px] mr-5">
+      <section className="lg:px-150 mb-20" id="team">
+        <div className="flex flex-wrap justify-center lg:flex-nowrap max-w-2000 mx-auto">
+          <div className="relative top-12 lg:top-20 w-150 h-150 lg:w-[321px] lg:h-[333px] lg:min-w-[321px] mr-5">
             <Image src="./team-work-2.png" alt="logo" fill priority />
           </div>
-          <div className="w-max md:mr-20">
-            <div className="relative mb-5 rounded-lg w-150 h-150 md:w-[321px] md:h-[292px]">
+          <div className="w-max lg:mr-20">
+            <div className="relative mb-5 rounded-lg w-150 h-150 lg:w-[321px] lg:h-[292px]">
               <Image
                 src="./team-work-1.png"
                 alt="logo"
@@ -58,18 +58,18 @@ export default function Home() {
                 className="rounded-lg"
               />
             </div>
-            <div className="relative w-150 h-20 md:w-[321px] md:h-[132px]">
+            <div className="relative w-150 h-20 lg:w-[321px] lg:h-[132px]">
               <Image src="./team-work-3.png" alt="logo" fill priority />
             </div>
           </div>{" "}
-          <div className="flex flex-col px-20 md:px-0 relative">
-            <div className="relative top-20 left-100 md:top-10 md:left-250 bottom-10 w-[196px] h-[207px]">
+          <div className="flex flex-col px-20 lg:px-0 relative">
+            <div className="relative top-20 left-100 lg:top-0 lg:left-0 bottom-10 w-[196px] h-[207px]">
               <Image src="./square.png" alt="logo" fill priority />
             </div>
-            <h2 className="text-green text-xl md:text-8xl mb-5 md:mb-14">
+            <h2 className="text-green text-xl lg:text-8xl mb-5 lg:mb-14">
               About us
             </h2>
-            <p className="text-base md:text-lg">
+            <p className="text-base lg:text-lg">
               Concept Softworks is a software company, we develop custom built
               software for clients - covering everything from financial
               institutions & medical companies all the way to tech companies and
@@ -87,11 +87,11 @@ export default function Home() {
             <Image src="./curved-arrow-1.png" alt="logo" fill priority />
           </div>
 
-          <div className="absolute top-[15rem] right-[55rem] hidden md:block w-[300px] h-[200px]">
+          <div className="absolute top-[15rem] right-[55rem] hidden lg:block w-[300px] h-[200px]">
             <Image src="./curved-arrow-2.png" alt="logo" fill priority />
           </div>
 
-          <div className="absolute -right-16 bottom-36 md:left-500 md:bottom-[2rem] w-[111px] h-[113px]">
+          <div className="absolute -right-16 bottom-36 lg:left-500 lg:bottom-[2rem] w-[111px] h-[113px]">
             <Image src="./green-ball.png" alt="logo" fill priority />
           </div>
 
@@ -100,17 +100,17 @@ export default function Home() {
           </div>
 
           <div className="relative mt-20">
-            <h2 className="text-4xl md:text-8xl mb-20 md:mb-8 md:ml-150 max-w-md">
+            <h2 className="text-4xl lg:text-8xl mb-20 lg:mb-8 lg:ml-150 max-w-md">
               See what we can do for you
             </h2>
 
-            <ul className="relative md:float-right md:bottom-200 -right-[2rem] text-lg md:w-500 md:text-5xl text-disabled ">
+            <ul className="relative lg:float-right lg:bottom-200 -right-[2rem] text-lg lg:w-500 lg:text-5xl text-disabled ">
               {expertise.map((item, index) => (
                 <li
                   key={index}
-                  className="group transition-transform duration-300 hover:scale-105 hover:text-white md:mb-10"
+                  className="group transition-transform duration-300 hover:scale-105 hover:text-white lg:mb-10"
                 >
-                  <Link href="#contact-us" className="block md:mb-10">
+                  <Link href="#contact-us" className="block lg:mb-10">
                     {item}
                   </Link>
                   <hr className="border-disabled group-hover:border-white transition-colors duration-300" />
@@ -118,7 +118,7 @@ export default function Home() {
               ))}
             </ul>
 
-            <div className="relative md:top-[12rem] md:ml-auto w-20 h-20">
+            <div className="relative lg:top-[12rem] lg:ml-auto w-20 h-20">
               <Image src="./green-ball-1.png" alt="logo" fill priority />
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function Home() {
       <ContactUs />
 
       {/* <section className="bg-light-grey px-16 text-white">
-        <h2 className="text-green text-xl md:text-8xl mb-8 md:mb-24">
+        <h2 className="text-green text-xl lg:text-8xl mb-8 lg:mb-24">
           Our Team
         </h2>
 

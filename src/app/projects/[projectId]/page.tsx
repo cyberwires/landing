@@ -33,7 +33,7 @@ const Project = async ({
 
   return (
     <section className="pt-150 bg-light-grey text-black">
-      <h2 className="text-5xl md:text-8xl capitalize text-center mb-12">
+      <h2 className="text-5xl lg:text-8xl capitalize text-center mb-12">
         {name}
       </h2>
 
@@ -44,14 +44,14 @@ const Project = async ({
         <Image src={logo} alt="logo" fill priority />
       </div>
 
-      <p className="text-mm md:text-4xl text-center mb-10">{description}</p>
+      <p className="text-mm lg:text-4xl text-center mb-10">{description}</p>
 
       <div className="flex justify-center gap-5">
-        <h3 className="text-base md:text-4xl">Tech Stack:</h3>
+        <h3 className="text-base lg:text-4xl">Tech Stack:</h3>
         <ul className="flex gap-3">
           {stack.map((item, index) => (
             <li
-              className="text-mm md:text-base border-2 rounded-xl px-4 text-center bg-white"
+              className="text-mm lg:text-base border-2 rounded-xl px-4 text-center bg-white"
               key={index}
             >
               {item}

@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
 
       {/* Text and Button */}
       <div className="px-10 pb-10">
-        <p className="text-mm md:text-lg mb-8 line-clamp-2">
+        <p className="text-mm lg:text-lg mb-8 line-clamp-2">
           {data.description}
         </p>
 

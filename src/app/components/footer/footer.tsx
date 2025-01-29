@@ -8,12 +8,12 @@ import twitter from "../../../../public/twitter.png";
 const Footer = () => {
   return (
     <footer className="bg-light-grey p-16">
-      <div className="flex items-center justify-between mb-8 md:mb-16">
+      <div className="flex items-center justify-between mb-8 lg:mb-16">
         <div className="w-16 h-16">
           <Image src={logo} alt="logo" width={40} height={40} priority />
         </div>
         <nav>
-          <ul className="flex space-x-4 text-mm gap-2 md:gap-36">
+          <ul className="flex space-x-4 text-mm gap-2 lg:gap-36">
             {menu.map(({ name, href }, index) => (
               <li className="relative" key={index}>
                 <Link
@@ -27,9 +27,9 @@ const Footer = () => {
           </ul>
         </nav>
       </div>
-      <hr className="border-black mb-10 md:mb-20" />
+      <hr className="border-black mb-10 lg:mb-20" />
       <div className="flex items-center justify-between">
-        <p className="text-sm md:text-mm">All rights reserved ®</p>
+        <p className="text-sm lg:text-mm">All rights reserved ®</p>
         <div className="flex items-center gap-3">
           <Link
             className="relative w-12 h-12"
