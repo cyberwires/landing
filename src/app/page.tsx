@@ -7,6 +7,7 @@ import Faq from "./components/faq/faq";
 import sp_logo from "../../public/sp-logo.png";
 import ojt_logo from "../../public/ojt-logo-full.png";
 import jtt_logo from "../../public/jtt-logo.png";
+import Hero from "./components/hero/hero";
 
 const companies = [
   { name: "SPAcademy", logo: sp_logo, width: 50, height: 50 },
@@ -17,35 +18,7 @@ const companies = [
 export default function Home() {
   return (
     <>
-      <section
-        className="relative w-full h-[83vh] bg-cover bg-center bg-no-repeat lg:bg-cover overflow-hidden"
-        style={{ backgroundImage: "url('./background.jpg')" }}
-        id="home"
-      >
-        {/* Content */}
-        <div className="w-full h-full absolute top-270 right-100 z-0 lg:right-250 lg:top-360">
-          <Image src="./lines.png" alt={""} fill priority />
-        </div>
-        <div className="w-full h-full absolute top-20 z-0">
-          <Image src="./lines2.png" alt={""} fill priority />
-        </div>
-
-        <div className="flex flex-col justify-center items-center w-1/2 h-full bg-black/80 text-center z-20 rounded-r-3xl">
-          <h1 className="text-4xl lg:text-9xl font-bold text-white mb-9">
-            Let’s make <span className="text-green">{`{ }`}</span>
-            <br />
-            software together!
-          </h1>
-
-          <Link
-            href="#contact-us"
-            className="block lg:hidden text-base bg-red-stone-900 px-4 py-2 rounded-lg hover:bg-red-stone-300"
-            style={{ zIndex: "9" }}
-          >
-            Contact Us
-          </Link>
-        </div>
-      </section>
+      <Hero />
       <section>
         <div className="flex justify-center p-8 relative bottom-20 bg-white w-max m-auto min-250 rounded-3xl">
           <ul className="lg:flex gap-20">

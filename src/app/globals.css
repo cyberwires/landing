@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
+}
+
+h1 {
+  line-height: 92px;
+  font-size: 72px;
+  font-weight: 700;
 }
 
 :root {
@@ -15,6 +23,7 @@ html {
   --light-grey: #f3f3f3;
   --grey: #3f3f3f;
   --disabled: #6D6D6D;
+  --blue: #47acce;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,8 +33,22 @@ html {
   }
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 56px;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 56px;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
