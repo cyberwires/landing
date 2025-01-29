@@ -38,7 +38,7 @@ export default function Home() {
           </h1>
 
           <Link
-            href="/contact-us"
+            href="#contact-us"
             className="block md:hidden text-base bg-red-stone-900 z-10 px-4 py-2 rounded-lg hover:bg-red-stone-300"
           >
             Contact Us

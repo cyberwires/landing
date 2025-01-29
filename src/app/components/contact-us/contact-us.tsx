@@ -44,15 +44,15 @@ const ContactUs = () => {
       <div className="mt-auto md:mb-75">
         <p className="text-black text-mm md:text-lg text-disabled">Phone</p>
         <p className="text-black text-mm md:text-lg mb-5 md:mb-12">
-          +1 (833) 520-3712
+          UA: +38 098 776 44 30
         </p>
 
         <p className="text-black text-mm md:text-lg text-disabled">Email</p>
         <Link
-          href="mailto:malenkaodeskakantorka@gmail.com"
+          href="mailto:sales@vertexglobal.com"
           className="text-black text-mm md:text-lg"
         >
-          malenkaodeskakantorka@gmail.com
+          sales@vertexglobal.com
         </Link>
       </div>
     </section>
