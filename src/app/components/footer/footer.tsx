@@ -2,6 +2,8 @@ import { menu } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../../public/logo.png";
+import insta from "../../../../public/instagram.png";
+import twitter from "../../../../public/twitter.png";
 
 const Footer = () => {
   return (
@@ -33,10 +35,10 @@ const Footer = () => {
             className="relative w-12 h-12"
             href="https://www.instagram.com/"
           >
-            <Image src="../instagram.png" alt="logo" fill priority />
+            <Image src={insta} alt="logo" fill priority />
           </Link>{" "}
           <Link className="relative w-12 h-12" href="https://www.twitter.com/">
-            <Image src="../twitter.png" alt="logo" fill priority />
+            <Image src={twitter} alt="logo" fill priority />
           </Link>
         </div>
       </div>
