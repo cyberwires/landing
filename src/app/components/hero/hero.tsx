@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-[80vh] bg-cover bg-center bg-no-repeat md:bg-cover overflow-hidden p-8"
+      className="relative w-full h-[100vh] md:h-[80vh] bg-cover bg-center bg-no-repeat md:bg-cover p-8"
       style={{
         backgroundImage:
           "linear-gradient(rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.5)),url('./hero-banner.jpg')",
@@ -25,7 +25,7 @@ export default function Hero() {
         <Link
           href="#contact-us"
           className="flex justify-center items-center text-base bg-transparent text-blue font-bold h-[52px] w-[130px] px-4 py-2 rounded-lg border-2 border-blue 
-        transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white"
+          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white"
         >
           Contact Us
         </Link>
