@@ -1,7 +1,6 @@
 import { projects } from "@/app/utils";
 import Image from "next/image";
 import CompanyProjects from "../page";
-import ContactUs from "@/app/components/contact-us/contact-us";
 
 // Define the possible project IDs
 export const generateStaticParams = async () => {
@@ -48,7 +47,7 @@ const Project = async ({
         <h3 className="text-base md:text-4xl">Tech Stack:</h3>
         <ul className="flex gap-3">
           {stack.map((item, index) => (
-            <li className="text-mm md:text-base border-2 rounded-xl px-4 text-center" key={index}>
+            <li className="text-mm md:text-base border-2 rounded-xl px-4 text-center bg-white" key={index}>
               {item}
             </li>
           ))}

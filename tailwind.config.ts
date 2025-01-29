@@ -28,6 +28,7 @@ export default {
         disabled: "var(--disabled)",
       },
       spacing: {
+        "2000": "200rem",
         "500": "50rem",
         "360": "36rem", // 360px
         "300": "30rem", // 300px
