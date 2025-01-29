@@ -32,7 +32,7 @@ export const projects = [
   {
     name: "Join The Trades",
     description:
-      "The thing we do not know much about but we will figure it out",
+      "The Future Is Skilled There's a significant gap in the skilled labor force. This means that industries are desperate for quality talent across all trades. But why aren't many people choosing these careers? The main reason is that many high schoolers (and their parents!) aren't fully aware of the opportunities trade careers offer and lack guidance on how to begin!",
     stack: ["PHP"],
     link: "/projects/join-the-trades",
     logo: jtt_logo,

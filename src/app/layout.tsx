@@ -10,7 +10,7 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Vertex Solutions",
+  title: "Vertex Global",
   description: "Efficient and fast app development for your business",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jakartaSans.variable} antialiased relative max-w-2000 mx-auto`}>
+      <body className={`${jakartaSans.variable} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

@@ -9,7 +9,7 @@ const ContactUs = () => {
   };
   return (
     <section
-      className="md:flex md:gap-36 bg-light-grey px-16 text-white pb-20"
+      className="md:flex md:justify-center md:gap-36 bg-light-grey px-16 text-white pb-20"
       id="contact-us"
     >
       <div className="mb-10 md:mb-0">

@@ -37,7 +37,10 @@ const Project = async ({
         {name}
       </h2>
 
-      <div className="flex justify-center relative mb-8 mx-auto w-full max-h-md min-h-100 max-w-md md:w-300 md:h-full">
+      <div
+        className="flex justify-center relative mb-8 mx-auto w-200 h-200"
+        style={{ height: name === "OJT-Logbook" ? "6rem" : "20rem" }}
+      >
         <Image src={logo} alt="logo" fill priority />
       </div>
 
@@ -47,7 +50,10 @@ const Project = async ({
         <h3 className="text-base md:text-4xl">Tech Stack:</h3>
         <ul className="flex gap-3">
           {stack.map((item, index) => (
-            <li className="text-mm md:text-base border-2 rounded-xl px-4 text-center bg-white" key={index}>
+            <li
+              className="text-mm md:text-base border-2 rounded-xl px-4 text-center bg-white"
+              key={index}
+            >
               {item}
             </li>
           ))}

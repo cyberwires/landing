@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="flex justify-center p-8 relative bottom-20 bg-white w-max m-auto min-250 rounded-t-3xl">
+        <div className="flex justify-center p-8 relative bottom-20 bg-white w-max m-auto min-250 rounded-3xl">
           <ul className="md:flex gap-20">
             {companies.map(({ name, logo, width, height }, index) => (
               <li
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       <section className="md:px-150 mb-20" id="team">
-        <div className="flex flex-wrap justify-center md:flex-nowrap">
+        <div className="flex flex-wrap justify-center md:flex-nowrap max-w-2000 mx-auto">
           <div className="relative top-12 md:top-20 w-150 h-150 md:w-[321px] md:h-[333px] md:min-w-[321px] mr-5">
             <Image src="./team-work-2.png" alt="logo" fill priority />
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
       <CompanyProjects />
 
       <section className="bg-light-grey px-16 text-white pb-20">
-        <div className="relative bg-grey overflow-hidden rounded-3xl p-5 max-h-500">
+        <div className="relative bg-grey overflow-hidden rounded-3xl p-5 max-h-500 max-w-2000 mx-auto">
           <div className="relative -left-[2rem] w-[240px] h-[55px]">
             <Image src="./curved-arrow-1.png" alt="logo" fill priority />
           </div>
