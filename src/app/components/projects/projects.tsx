@@ -33,13 +33,13 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
   };
 
   return (
-    <div className="px-4 py-10 md:px-16 md:py-20 max-w-2000 mx-auto">
-      <h2 className="text-green text-xl md:text-8xl mb-8 md:mb-24">
+    <div className="px-4 py-10 lg:px-16 lg:py-20 max-w-2000 mx-auto">
+      <h2 className="text-green text-xl lg:text-8xl mb-8 lg:mb-24">
         Our Projects
       </h2>
 
       {/* Mobile Slider */}
-      <div className="relative w-full overflow-hidden md:hidden">
+      <div className="relative w-full overflow-hidden lg:hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -67,7 +67,7 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
       </div>
 
       {/* Desktop Layout (No Slider) */}
-      <div className="hidden md:flex flex-wrap md:flex-nowrap gap-10">
+      <div className="hidden lg:flex flex-wrap lg:flex-nowrap gap-10">
         {availableProjects.map((project, index) => (
           <ProjectCard key={index} data={project} />
         ))}

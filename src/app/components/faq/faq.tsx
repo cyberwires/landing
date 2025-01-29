@@ -26,10 +26,10 @@ const Faq = () => {
         <div className="relative mx-auto mb-5 w-100 h-100">
           <Image src="./logo.png" alt="logo" fill priority />
         </div>
-        <h2 className="text-4xl md:text-8xl mb-5 md:mb-20 text-center">
+        <h2 className="text-4xl lg:text-8xl mb-5 lg:mb-20 text-center">
           Frequently asked questions
         </h2>
-        <p className="text-2xl md:text-4xl mb-5 md:mb-20 text-center">
+        <p className="text-2xl lg:text-4xl mb-5 lg:mb-20 text-center">
           Whats happening around the World.
         </p>
       </div>

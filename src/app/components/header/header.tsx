@@ -14,7 +14,7 @@ export default function Header() {
 
       {/* Desktop Navigation */}
       <nav>
-        <ul className="hidden md:flex space-x-4 text-base gap-36">
+        <ul className="hidden lg:flex space-x-4 text-base md:gap-7 gap-36">
           {menu.map(({ name, href }, index) => (
             <li className="relative" key={index}>
               <Link
@@ -33,7 +33,7 @@ export default function Header() {
       {/* Contact Button (visible for all) */}
       <Link
         href="#contact-us"
-        className="hidden md:block text-base text-white bg-green px-4 py-2 rounded-lg hover:bg-green ml-auto"
+        className="hidden lg:block text-base text-white bg-green px-4 py-2 rounded-lg hover:bg-green ml-auto"
       >
         Contact Us
       </Link>
