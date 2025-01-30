@@ -1,15 +1,22 @@
 import Link from "next/link";
+import Image from "next/image";
+import background from "../../../../public/hero-banner.jpg";
 
 export default function Hero() {
   return (
     <section
       className="relative w-full h-[100vh] md:h-[80vh] bg-cover bg-center bg-no-repeat md:h-[110vh] lg:bg-cover p-8"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.5)),url('./hero-banner.jpg')",
-      }}
       id="home"
     >
+      <div
+        className="absolute top-0 left-0 w-full h-full"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.5))",
+        }}
+      >
+        <Image src={background} alt="logo" fill objectFit="cover" priority />
+      </div>
       <div className="flex flex-col gap-16 justify-center items-center h-full text-center">
         <h1 className="text-white animate-slide-in-right">
           Let’s make <span className="text-blue">{`{ }`}</span>
