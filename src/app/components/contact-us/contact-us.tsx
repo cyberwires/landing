@@ -13,7 +13,7 @@ const ContactUs = () => {
       id="contact-us"
     >
       <div className="mb-10 lg:mb-0">
-        <h2 className="text-blue text-4xl lg:text-8xl mb-20 lg:mb-8">
+        <h2 className="text-blue font-bold text-4xl lg:text-8xl mb-20 lg:mb-8">
           Contact Us!
         </h2>
         <p className="text-black text-base lg:text-lg mb-8">

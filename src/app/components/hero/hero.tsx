@@ -25,7 +25,7 @@ export default function Hero() {
         <Link
           href="#contact-us"
           className="flex justify-center items-center text-base bg-transparent text-blue font-bold h-[52px] w-[130px] px-4 py-2 rounded-lg border-2 border-blue 
-          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white animate-slide-in-right"
+          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white animate-slide-in-right font-bold"
         >
           Contact Us
         </Link>

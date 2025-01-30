@@ -34,7 +34,7 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
 
   return (
     <div className="px-4 py-10 lg:px-16 lg:py-20 max-w-2000 mx-auto">
-      <h2 className="text-blue text-xl lg:text-8xl mb-8 lg:mb-24">
+      <h2 className="text-blue font-bold text-xl lg:text-8xl mb-8 lg:mb-24">
         Our Projects
       </h2>
 
