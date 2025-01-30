@@ -77,7 +77,7 @@ export default function Home() {
             <div className="relative top-20 left-100 lg:top-0 lg:left-0 bottom-10 w-[196px] h-[207px]">
               <Image src="./square.png" alt="logo" fill priority />
             </div>
-            <h2 className="text-blue text-xl lg:text-8xl mb-5 lg:mb-14 animate-slide-up">
+            <h2 className="text-blue font-bold text-xl lg:text-8xl mb-5 lg:mb-14 animate-slide-up">
               About us
             </h2>
             <p className="text-base lg:text-lg animate-slide-up">
