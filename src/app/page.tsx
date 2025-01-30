@@ -18,12 +18,50 @@ const companies = [
 
 export const metadata: Metadata = {
   title: {
-    absolute: "",
-    default: "Vertex Solutions",
-    template: "%s Codevolution",
+    absolute: "Vertex Solutions | Web Development & Digital Innovation",
+    default: "Vertex Solutions - Web & Software Development Experts",
   },
   description:
-    "Innovation happens when great minds come together. Join us in crafting digital experiences.",
+    "Vertex Solutions is a leading web development agency specializing in innovative digital solutions, software development, and UI/UX design. Elevate your brand with cutting-edge technology.",
+
+  keywords: [
+    "Web Development",
+    "Software Development",
+    "UI/UX Design",
+    "Digital Solutions",
+    "Custom Software",
+    "Web Apps",
+    "Next.js Development",
+    "Vertex Solutions",
+  ],
+
+  openGraph: {
+    title: "Vertex Solutions | Web Development & Digital Innovation",
+    description:
+      "We craft exceptional digital experiences through modern web technologies. Let's build something great together!",
+    url: "https://vertex-solutions-ua.netlify.app",
+    siteName: "Vertex Solutions",
+    images: [
+      {
+        url: "https://vertex-solutions-ua.netlify.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vertex Solutions - Web Development",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Vertex Solutions | Web Development & Digital Innovation",
+    description:
+      "Discover top-tier web and software development with Vertex Solutions. Transform your ideas into reality!",
+    images: ["https://vertex-solutions-ua.netlify.app/og-image.jpg"],
+    creator: "@YourTwitterHandle",
+  },
+
+  metadataBase: new URL("https://vertex-solutions-ua.netlify.app"),
 };
 
 export default function Home() {
