@@ -8,12 +8,23 @@ import sp_logo from "../../public/sp-logo.png";
 import ojt_logo from "../../public/ojt-logo-full.png";
 import jtt_logo from "../../public/jtt-logo.png";
 import Hero from "./components/hero/hero";
+import { Metadata } from "next";
 
 const companies = [
   { name: "SPAcademy", logo: sp_logo, width: 50, height: 50 },
   { name: "OJT-Logbook", logo: ojt_logo, width: 100, height: 50 },
   { name: "JTT", logo: jtt_logo, width: 50, height: 50 },
 ];
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "",
+    default: "Vertex Solutions",
+    template: "%s Codevolution",
+  },
+  description:
+    "Innovation happens when great minds come together. Join us in crafting digital experiences.",
+};
 
 export default function Home() {
   return (
@@ -66,10 +77,10 @@ export default function Home() {
             <div className="relative top-20 left-100 lg:top-0 lg:left-0 bottom-10 w-[196px] h-[207px]">
               <Image src="./square.png" alt="logo" fill priority />
             </div>
-            <h2 className="text-green text-xl lg:text-8xl mb-5 lg:mb-14">
+            <h2 className="text-blue text-xl lg:text-8xl mb-5 lg:mb-14 animate-slide-up">
               About us
             </h2>
-            <p className="text-base lg:text-lg">
+            <p className="text-base lg:text-lg animate-slide-up">
               Concept Softworks is a software company, we develop custom built
               software for clients - covering everything from financial
               institutions & medical companies all the way to tech companies and

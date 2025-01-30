@@ -11,13 +11,13 @@ export default function Hero() {
       id="home"
     >
       <div className="flex flex-col gap-16 justify-center items-center h-full text-center">
-        <h1>
+        <h1 className="text-white animate-slide-in-right">
           Let’s make <span className="text-blue">{`{ }`}</span>
           <br />
           software together!
         </h1>
 
-        <p className="text-center lg:text-3xl md:text-2xl text-base text-gray-300">
+        <p className="text-center lg:text-3xl md:text-2xl text-base text-gray-300 animate-slide-in-left">
           Innovation happens when great minds come together. Join us in crafting
           digital experiences.
         </p>
@@ -25,7 +25,7 @@ export default function Hero() {
         <Link
           href="#contact-us"
           className="flex justify-center items-center text-base bg-transparent text-blue font-bold h-[52px] w-[130px] px-4 py-2 rounded-lg border-2 border-blue 
-          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white"
+          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white animate-slide-in-right"
         >
           Contact Us
         </Link>

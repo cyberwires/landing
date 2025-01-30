@@ -13,7 +13,7 @@ const ContactUs = () => {
       id="contact-us"
     >
       <div className="mb-10 lg:mb-0">
-        <h2 className="text-green text-4xl lg:text-8xl mb-20 lg:mb-8">
+        <h2 className="text-blue text-4xl lg:text-8xl mb-20 lg:mb-8">
           Contact Us!
         </h2>
         <p className="text-black text-base lg:text-lg mb-8">
@@ -36,7 +36,7 @@ const ContactUs = () => {
             className="text-black outline-0 bg-light-grey text-mm lg:text-lg border-2 rounded-xl p-4 mb-4 lg:mb-8"
           />
 
-          <button className="text-base text-white bg-green h-14 rounded-lg hover:bg-green max-w-75">
+          <button className="text-base text-white h-14 rounded-lg bg-blue border-transparent text-white text-base hover:bg-transparent hover:text-blue hover:border-2 hover:border-blue max-w-75">
             Submit
           </button>
         </form>

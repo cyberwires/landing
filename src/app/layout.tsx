@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import { Roboto_Slab } from "next/font/google";
 
-const jakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-jakarta-sans",
+const roboto_slab = Roboto_Slab({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Vertex Global",
+  title: "Vertex Solutions",
   description: "Efficient and fast app development for your business",
 };
 
@@ -21,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jakartaSans.variable} antialiased`}>
+      <body className={`${roboto_slab.className} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />
