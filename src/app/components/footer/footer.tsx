@@ -18,9 +18,10 @@ const Footer = () => {
               <li className="relative" key={index}>
                 <Link
                   href={href}
-                  className="hover:after:block hover:after:absolute after:content-[''] after:w-full after:h-1 after:bg-black"
+                  className="text-slate-800 font-bold relative overflow-hidden transition-all duration-200 group hover:text-blue"
                 >
                   {name}
+                  <span className="absolute top-8 left-0 w-0 h-1 bg-blue transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
             ))}

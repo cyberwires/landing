@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-[100vh] md:h-[80vh] bg-cover bg-center bg-no-repeat md:bg-cover p-8"
+      className="relative w-full h-[100vh] md:h-[80vh] bg-cover bg-center bg-no-repeat md:h-[110vh] lg:bg-cover p-8"
       style={{
         backgroundImage:
           "linear-gradient(rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.5)),url('./hero-banner.jpg')",
