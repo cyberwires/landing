@@ -145,10 +145,10 @@ export default function Home() {
             className="text-gray-500 h-[7rem] absolute left-[15px] top-[15px] animate-spin-fast"
           />
 
-          <div className="flex items-center gap-56 relative">
+          <div className="flex items-center gap-0 lg:gap-56 relative">
             <h2 className="text-4xl lg:text-8xl">See what we can do for you</h2>
 
-            <ul className="relative text-lg lg:w-500 lg:text-5xl text-disabled p-16">
+            <ul className="relative text-lg lg:w-500 lg:text-5xl text-disabled px-4 lg:p-16">
               {expertise.map((item, index) => (
                 <li
                   key={index}
