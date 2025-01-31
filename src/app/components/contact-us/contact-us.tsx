@@ -1,12 +1,6 @@
-"use client";
-
 import Link from "next/link";
 
 const ContactUs = () => {
-  const handleSubmit = (event: { preventDefault: () => void }): void => {
-    event.preventDefault();
-    console.log("Form");
-  };
   return (
     <section
       className="lg:flex lg:justify-center lg:gap-36 bg-light-grey px-16 text-white pb-20"
@@ -21,19 +15,28 @@ const ContactUs = () => {
           shortest deadline? Contact us!
         </p>
 
-        <form className="flex flex-col border-none" onSubmit={handleSubmit}>
+        <form
+          className="flex flex-col border-none"
+          name="contact"
+          method="POST"
+          action="/success"
+          data-netlify="true"
+        >
           <input
             placeholder="Name"
             className="text-black outline-0 bg-light-grey h-16 text-mm lg:text-lg border-2 rounded-xl p-4 h-20 mb-10 lg:mb-20"
+            name="name"
           />
           <input
             placeholder="Email"
             className="text-black outline-0 bg-light-grey h-16 text-mm lg:text-lg border-2 rounded-xl p-4 h-20 mb-10 lg:mb-20"
+            name="email"
           />
           <textarea
             placeholder="Project Details"
             rows={3}
             className="text-black outline-0 bg-light-grey text-mm lg:text-lg border-2 rounded-xl p-4 mb-4 lg:mb-8"
+            name="details"
           />
 
           <button className="text-base text-white h-14 rounded-lg bg-blue border-transparent text-white text-base hover:bg-transparent hover:text-blue hover:border-2 hover:border-blue max-w-75">

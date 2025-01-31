@@ -5,11 +5,17 @@ import background from "../../../../public/hero-banner.jpg";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-[100vh] md:h-[110vh] bg-cover bg-center bg-no-repeat lg:bg-cover p-8"
+      className="relative w-full h-[80vh] md:h-[110vh] bg-cover bg-center bg-no-repeat lg:bg-cover p-8"
       id="home"
     >
       <div className="absolute top-0 left-0 w-full h-full">
-        <Image src={background} alt="logo" fill objectFit="cover" priority />
+        <Image
+          src={background}
+          alt="logo"
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+        />
       </div>
       <div className="flex flex-col gap-16 justify-center items-center h-full text-center">
         <h1 className="text-white animate-slide-in-right">
