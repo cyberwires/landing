@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "spin 6s linear infinite",
+        "spin-fast": "spin 3s linear infinite reverse",
+      },
       fontSize: {
         sm: ["1.2rem", { lineHeight: "1.5" }], // 12px
         mm: ["1.4rem", { lineHeight: "1.5" }], // 16px

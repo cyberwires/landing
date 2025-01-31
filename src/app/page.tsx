@@ -9,6 +9,8 @@ import ojt_logo from "../../public/ojt-logo-full.png";
 import jtt_logo from "../../public/jtt-logo.png";
 import Hero from "./components/hero/hero";
 import { Metadata } from "next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGear } from "@fortawesome/free-solid-svg-icons";
 
 const companies = [
   { name: "SPAcademy", logo: sp_logo, width: 50, height: 50 },
@@ -131,29 +133,22 @@ export default function Home() {
       <CompanyProjects />
 
       <section className="bg-light-grey px-16 text-white pb-20">
-        <div className="relative bg-grey overflow-hidden rounded-3xl p-5 max-h-500 max-w-2000 mx-auto">
-          <div className="relative -left-[2rem] w-[240px] h-[55px]">
-            <Image src="./curved-arrow-1.png" alt="logo" fill priority />
-          </div>
+        <div className="relative flex items-center justify-center bg-grey p-8">
+          {/* Larger Gear */}
+          <FontAwesomeIcon
+            icon={faGear}
+            className="text-gray-600 h-[10rem] absolute animate-spin-slow"
+          />
+          {/* Smaller Gear (rotates in opposite direction) */}
+          <FontAwesomeIcon
+            icon={faGear}
+            className="text-gray-500 h-[7rem] absolute left-[15px] top-[15px] animate-spin-fast"
+          />
 
-          <div className="absolute top-[15rem] right-[55rem] hidden lg:block w-[300px] h-[200px]">
-            <Image src="./curved-arrow-2.png" alt="logo" fill priority />
-          </div>
+          <div className="flex items-center gap-56 relative">
+            <h2 className="text-4xl lg:text-8xl">See what we can do for you</h2>
 
-          <div className="absolute -right-16 bottom-36 lg:left-500 lg:bottom-[2rem] w-[111px] h-[113px]">
-            <Image src="./green-ball.png" alt="logo" fill priority />
-          </div>
-
-          <div className="absolute top-0 left-250 bg-disabled opacity-40 w-[117px] h-full">
-            <Image src="./pixel-background.png" alt="logo" fill priority />
-          </div>
-
-          <div className="relative mt-20">
-            <h2 className="text-4xl lg:text-8xl mb-20 lg:mb-8 lg:ml-150 max-w-md">
-              See what we can do for you
-            </h2>
-
-            <ul className="relative lg:float-right lg:bottom-200 -right-[2rem] text-lg lg:w-500 lg:text-5xl text-disabled ">
+            <ul className="relative text-lg lg:w-500 lg:text-5xl text-disabled p-16">
               {expertise.map((item, index) => (
                 <li
                   key={index}
@@ -166,10 +161,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-
-            <div className="relative lg:top-[12rem] lg:ml-auto w-20 h-20">
-              <Image src="./green-ball-1.png" alt="logo" fill priority />
-            </div>
           </div>
         </div>
       </section>

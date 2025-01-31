@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import { Roboto_Slab } from "next/font/google";
+import Head from "next/head";
 
 const roboto_slab = Roboto_Slab({
   subsets: ["latin"],
