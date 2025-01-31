@@ -94,11 +94,11 @@ export default function Home() {
 
       <section className="lg:px-150 mb-20" id="team">
         <div className="flex flex-wrap justify-center lg:flex-nowrap max-w-2000 mx-auto">
-          <div className="relative top-12 lg:top-20 w-150 h-150 lg:w-[321px] lg:h-[333px] lg:min-w-[321px] mr-5">
+          <div className="relative top-12 lg:top-20 w-150 h-150 lg:w-[321px] lg:h-[333px] lg:min-w-[321px] mr-5 animate-slide-in-left">
             <Image src="./team-work-2.png" alt="logo" fill priority />
           </div>
           <div className="w-max lg:mr-20">
-            <div className="relative mb-5 rounded-lg w-150 h-150 lg:w-[321px] lg:h-[292px]">
+            <div className="relative mb-5 rounded-lg w-150 h-150 lg:w-[321px] lg:h-[292px] animate-slide-down">
               <Image
                 src="./team-work-1.png"
                 alt="logo"
@@ -107,7 +107,7 @@ export default function Home() {
                 className="rounded-lg"
               />
             </div>
-            <div className="relative w-150 h-20 lg:w-[321px] lg:h-[132px]">
+            <div className="relative w-150 h-20 lg:w-[321px] lg:h-[132px] animate-slide-in-right">
               <Image src="./team-work-3.png" alt="logo" fill priority />
             </div>
           </div>{" "}

@@ -2,8 +2,8 @@ import { menu } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../../public/logo.png";
-import insta from "../../../../public/instagram.png";
-import twitter from "../../../../public/twitter.png";
+import linkedin from "../../../../public/linkedin.png";
+import upwork from "../../../../public/upwork.png";
 
 const Footer = () => {
   return (
@@ -32,14 +32,11 @@ const Footer = () => {
       <div className="flex items-center justify-between">
         <p className="text-sm lg:text-mm">All rights reserved ®</p>
         <div className="flex items-center gap-3">
-          <Link
-            className="relative w-12 h-12"
-            href="https://www.instagram.com/"
-          >
-            <Image src={insta} alt="logo" fill priority />
+          <Link className="relative w-12 h-12" href="https://www.linkedin.com/">
+            <Image src={linkedin} alt="logo" fill priority />
           </Link>{" "}
-          <Link className="relative w-12 h-12" href="https://www.twitter.com/">
-            <Image src={twitter} alt="logo" fill priority />
+          <Link className="relative w-12 h-12" href="https://www.upwork.com/">
+            <Image src={upwork} alt="logo" fill priority />
           </Link>
         </div>
       </div>

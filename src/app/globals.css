@@ -96,8 +96,23 @@ body {
   }
 }
 
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .animate-slide-up {
   animation: slide-up 1s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slide-down 1s ease-out forwards;
 }
 
 .delay-300 {

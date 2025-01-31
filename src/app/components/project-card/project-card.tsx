@@ -10,7 +10,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   return (
     <div className="bg-white text-black cursor-pointer mx-auto max-w-xl max-h-500 rounded-lg transition-transform duration-200 hover:scale-105 hover:bg-black hover:text-white">
       {/* Image Container */}
-      <div className="relative w-full h-360 mb-7">
+      <div className="relative w-full h-250 mb-7">
         {/* Tech Tags */}
         <div className="flex justify-end gap-5 relative z-10 p-5">
           {data.stack.map((item, index) => (
