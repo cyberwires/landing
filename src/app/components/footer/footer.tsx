@@ -7,15 +7,18 @@ import upwork from "../../../../public/upwork.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-light-grey p-16">
+    <footer className="bg-light-grey p-6 lg:p-16">
       <div className="flex items-center justify-between mb-8 lg:mb-16">
         <div className="w-16 h-16">
-          <Image src={logo} alt="logo" width={40} height={40} priority />
+          {" "}
+          <Link href="/">
+            <Image src={logo} alt="logo" width={40} height={40} priority />
+          </Link>
         </div>
         <nav>
-          <ul className="flex space-x-4 text-mm gap-2 lg:gap-36">
+          <ul className="flex space-x-4 text-mm text-center items-center gap-4 lg:gap-36">
             {menu.map(({ name, href }, index) => (
-              <li className="relative" key={index}>
+              <li className="relative !ml-0" key={index}>
                 <Link
                   href={href}
                   className="text-slate-800 font-bold relative overflow-hidden transition-all duration-200 group hover:text-blue"

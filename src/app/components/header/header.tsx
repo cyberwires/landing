@@ -7,18 +7,24 @@ import logo from "../../../../public/logo.png";
 import MobileHeader from "./mobile-header";
 
 export default function Header() {
-    const [open, setOpen] = useState<boolean>(false);
-  
-    const handleMenuOpen = (): void => {
-      setOpen((prevState) => !prevState);
-    };
+  const [open, setOpen] = useState<boolean>(false);
+
+  const handleMenuOpen = (): void => {
+    setOpen((prevState) => !prevState);
+  };
 
   return (
-    <header className={`flex justify-center gap-36 absolute left-0 z-10 w-full h-[76px] top-0 ${open ? "bg-[#181f21]" : "bg-white"} p-6`}>
+    <header
+      className={`flex justify-center gap-36 sticky left-0 z-10 w-full h-[76px] top-0 ${
+        open ? "bg-[#181f21]" : "bg-white"
+      } p-6`}
+    >
       <div className="max-w-[1400px] w-full flex items-center justify-between ">
         {/* Logo */}
         <div className="w-16 h-16">
-          <Image src={logo} alt="logo" width={40} height={40} priority />
+          <Link href="/">
+            <Image src={logo} alt="logo" width={40} height={40} priority />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

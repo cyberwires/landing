@@ -31,6 +31,8 @@ const ContactUs = () => {
             placeholder="Email"
             className="text-black outline-0 bg-light-grey h-16 text-mm lg:text-lg border-2 rounded-xl p-4 h-20 mb-10 lg:mb-20"
             name="email"
+            type="email"
+            id="email"
           />
           <textarea
             placeholder="Project Details"

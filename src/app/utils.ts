@@ -16,7 +16,8 @@ export const menu = [
 export const projects = [
   {
     name: "Academy",
-    description: "Learning platform for people who are thriving for excellence",
+    description:
+      "This learning platform is designed for individuals who are committed to continuous growth and professional excellence. Whether you are just beginning your journey or striving to refine your expertise, it provides the knowledge, skills, and resources needed to help you succeed. With carefully curated courses, hands-on projects, and expert guidance, learners gain real-world insights that enhance their careers. The platform fosters a dynamic learning experience through interactive tools and a supportive community, enabling individuals to stay ahead in their fields. Here, learning is not just about acquiring knowledge but about mastering skills and achieving excellence in every endeavor.",
     stack: ["React", "Node", "AWS"],
     link: "/projects/academy",
     logo: sp_logo,
@@ -24,7 +25,8 @@ export const projects = [
   },
   {
     name: "OJT-Logbook",
-    description: `"Time management platform that help people to track their progress"`,
+    description:
+      "This time management platform is designed to help individuals stay organized, track their progress, and maximize productivity. Whether you’re managing personal goals, professional tasks, or long-term projects, it provides intuitive tools to structure your time effectively. With features like progress tracking, goal setting, and smart reminders, users can stay focused and consistently move toward their objectives. The platform offers insightful analytics to help identify patterns, optimize schedules, and enhance efficiency. By fostering better habits and prioritizing tasks effectively, it empowers users to take control of their time, reduce stress, and achieve greater success in both work and life.",
     stack: ["React", "Node", "AWS"],
     link: "/projects/ojt-logbook",
     logo: ojt_logo,
