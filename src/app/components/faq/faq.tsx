@@ -3,19 +3,34 @@ import { FaqItem } from "./faq-item";
 
 const faqs = [
   {
-    question: "What is the best way to create a SaaS business today?",
+    question: "Flexible Cooperation",
     answer:
-      "Launch a business today with our help and get it done with amazing launch features, websites, and more...",
+      "Project scope uncertainty is a common challenge for startups and SMBs. A development centers model enables us to be flexible and change priorities on demand.",
   },
   {
-    question: "How do I get started with SaaS development?",
+    question: "Cost Control",
     answer:
-      "To start with SaaS, define your target market, validate your idea, build an MVP, and iterate based on feedback...",
+      "You only pay for the negotiated scope of work. If your priorities change, we immediately react to them and change our focus. A clearly defined project scope means you don’t overpay.",
   },
   {
-    question: "What are the essential tools for SaaS development?",
+    question: "Collaborative Partnership",
     answer:
-      "Essential tools include cloud hosting (AWS, GCP), backend frameworks (Node.js, Django), frontend frameworks (React, Vue), and CI/CD pipelines...",
+      "A development center cooperation fosters collaboration between clients and vendors. Thus, you’ll not only get your job done but also share best practices and learn from our top experts.",
+  },
+  {
+    question: "Quality Software",
+    answer:
+      "With tremendous flexibility and the ability to adapt to changing requirements, we can build a product that fulfills your business goals, not just follows requirements.",
+  },
+  {
+    question: "Risk Mitigation",
+    answer:
+      "We define the scope initially and constantly track the progress to ensure we build a desired product. This approach prevents any extra work and surcharges.",
+  },
+  {
+    question: "Project Ownership",
+    answer:
+      "There is visibility into resource allocation, the amount of time spent on each task, and the progress made. You’re in control and can tweak your strategy accordingly.",
   },
 ];
 

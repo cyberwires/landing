@@ -1,104 +1,62 @@
-import Image from "next/image";
-
 const About = () => {
   return (
-    <section className="text-black mt-100 px-10 py-16 bg-gray h-full text-base lg:text-lg">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="bg-light-grey text-black px-10 py-16 h-full text-base lg:text-lg">
+      <div className="container mx-auto gap-10 items-center">
         {/* Text Section */}
         <div>
           <h1 className="text-4xl lg:text-8xl font-bold text-blue mb-6">
             About Vertex Solutions
           </h1>
+
           <section className="mb-6">
-            <h2 className="text-2xl lg:text-6xl font-semibold mb-2">
-              Who We Are
+            <h2 className="text-2xl lg:text-6xl font-semibold mb-4">
+              OUR VALUES
             </h2>
+            <h3 className="text-2xl lg:text-4xl font-semibold mb-2">
+              We Deliver
+            </h3>
             <p className="leading-relaxed">
-              Vertex Solutions is a passionate and highly skilled team of
-              developers and engineers dedicated to delivering top-tier software
-              solutions. Based in Lviv, we specialize in building scalable,
-              high-performance applications that help businesses thrive in a
-              fast-paced digital world.
+              We take ownership and deliver efficient, expert-engineered
+              solutions. We tackle challenges with grit and we focus on customer
+              benefits. Our goal is to maximize results for our clients, no
+              matter how big or small the challenge. That’s how we achieve
+              excellence.
             </p>
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl lg:text-6xl font-semibold mb-2">
-              Our Team
-            </h2>
-            <p>Our team consists of five dedicated professionals:</p>
-            <ul className="list-disc pl-5">
-              <li>
-                <strong>Project Manager</strong> – Ensuring smooth communication
-                and project success.
-              </li>
-              <li>
-                <strong>QA Engineer</strong> – Guaranteeing top-notch software
-                quality.
-              </li>
-              <li>
-                <strong>Backend Engineer (Node.js, Fastify)</strong> –
-                Architecting robust, scalable backend solutions.
-              </li>
-              <li>
-                <strong>
-                  Frontend Engineers (React, Redux, RTK Query, Material UI,
-                  TypeScript)
-                </strong>{" "}
-                – Crafting intuitive and powerful user interfaces.
-              </li>
-            </ul>
-          </section>
-
-          <section className="mb-6">
-            <h2 className="text-2xl lg:text-6xl font-semibold mb-2">
-              What We Do
-            </h2>
-            <p>We offer full-cycle software development services, including:</p>
-            <ul className="list-disc pl-5">
-              <li>
-                <strong>Web & Mobile App Development</strong> – Scalable, fast,
-                and efficient applications.
-              </li>
-              <li>
-                <strong>Custom Software Solutions</strong> – Tailored software
-                to meet unique business needs.
-              </li>
-              <li>
-                <strong>IT Consulting & Optimization</strong> – Helping
-                businesses adopt modern technologies for maximum efficiency.
-              </li>
-            </ul>
-          </section>
-
-          <section className="mb-6">
-            <h2 className="text-2xl lg:text-6xl font-semibold mb-2">
-              Why Choose Us?
-            </h2>
-            <ul className="list-disc pl-5">
-              <li>
-                <strong>Expertise & Innovation</strong> – We leverage the latest
-                tech stacks to build cutting-edge solutions.
-              </li>
-              <li>
-                <strong>Agile & Efficient Development</strong> – Our streamlined
-                workflow ensures rapid delivery without compromising quality.
-              </li>
-              <li>
-                <strong>Client-Oriented Approach</strong> – We prioritize
-                transparency, communication, and delivering measurable results.
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl lg:text-6xl font-semibold mb-2">
-              Let’s Build Something Great!
-            </h2>
+            <h3 className="text-2xl lg:text-4xl font-semibold mb-2">We Grow</h3>
             <p>
-              Looking for a reliable tech partner?{" "}
-              <strong>Get in touch with Vertex Solutions</strong> today and
-              let’s turn your vision into reality!
+              We foster a culture of diversity and inclusivity. We believe in
+              making a positive impact in the communities where we work and
+              live. Sustainable and responsible growth are key influencers to
+              our actions. That’s how we build a better future.
+            </p>
+          </section>
+
+          <section className="mb-6">
+            <h3 className="text-2xl lg:text-4xl font-semibold mb-2">We Care</h3>
+            <p>
+              We are a team of professionals dedicated to continuously
+              perfecting our skills. Each Svitler is a unique individual, and we
+              embrace a flexible approach to ensure every team member finds
+              their own path to excellence in their respective fields. This is
+              how we advance together.
+            </p>
+          </section>
+
+          <section className="mb-6">
+            <h3 className="text-2xl lg:text-4xl font-semibold mb-2">
+              We Keep It Simple
+            </h3>
+            <p>
+              We uphold integrity, openness, and transparency in all our
+              processes. Trust is our foundation, and we strive to maintain
+              simplicity to ensure clarity and promote efficiency. That’s how we
+              build lasting relationships with our clients and colleagues. We
+              value communication, teamwork, and relationships between people,
+              respect and support each other and our clients, and pay close
+              attention to the needs of others.
             </p>
           </section>
         </div>

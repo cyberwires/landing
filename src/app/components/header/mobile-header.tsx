@@ -73,7 +73,7 @@ const MobileHeader = ({
           href="#contact-us"
           onClick={handleMenuOpen}
           className="flex justify-center items-center font-bold h-[42px] w-[110px] px-4 py-2 rounded-lg border-2 
-          transition-all duration-300 bg-transparent text-blue border-blue text-base hover:bg-blue hover:border-transparent hover:text-white m-[auto]"
+          transition-all duration-300 bg-blue text-white border-blue text-base hover:bg-blue hover:border-transparent hover:text-white m-[auto]"
         >
           Contact Us
         </Link>
