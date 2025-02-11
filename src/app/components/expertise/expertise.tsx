@@ -19,7 +19,7 @@ export default function Expertise() {
             {/* Smaller Gear (rotates in opposite direction) */}
             <FontAwesomeIcon
               icon={faGear}
-              className="text-sky-200 opacity-75 h-[7rem] absolute left-[15px] top-0 hidden xl:block animate-spin-fast"
+              className="text-sky-200 opacity-75 h-[7rem] absolute left-0 top-0 hidden xl:block animate-spin-fast"
             />
 
             <div className="flex flex-col lg:flex-row items-center justify-between gap-28 lg:gap-56 relative w-full">
