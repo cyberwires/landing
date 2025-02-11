@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PaddingContainer from "../../components/padding-container/padding-container";
+import PaddingContainer from "../padding-container/padding-container";
 import { Container } from "../container/container";
 
 export default function AboutUs() {

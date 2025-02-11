@@ -1,9 +1,13 @@
-import sp_logo from "../../public/sp-logo.png";
-import ojt_logo from "../../public/ojt-logo-full.png";
-import jtt_logo from "../../public/jtt-logo.png";
-import learning from "../../public/technician-learning.jpg";
-import working from "../../public/tech-working.png";
+import DesignIcon from '@/app/icons/design-icon';
+import DevelopmentIcon from '@/app/icons/development-icon';
 import searching from "../../public/job-search.jpg";
+import jtt_logo from "../../public/jtt-logo.png";
+import ojt_logo from "../../public/ojt-logo-full.png";
+import sp_logo from "../../public/sp-logo.png";
+import working from "../../public/tech-working.png";
+import learning from "../../public/technician-learning.jpg";
+import WebIcon from './icons/web-icon';
+import MobileIcon from './icons/mobile-icon';
 
 export const menu = [
   { name: "Home", href: "/" },
@@ -44,8 +48,8 @@ export const projects = [
 ];
 
 export const expertise = [
-  "Product Design",
-  "Web Application",
-  "Mobile Application",
-  "Product Development",
+  { name: "Product Design", icon: DesignIcon },
+  { name: "Web Application", icon: WebIcon },
+  { name: "Mobile Application", icon: MobileIcon },
+  { name: "Product Development", icon: DevelopmentIcon },
 ];

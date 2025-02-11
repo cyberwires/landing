@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header
-      className={`p-6 sticky left-0 z-10 w-full h-[76px] top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_2px_6px_2px] z-50 ${
+      className={`p-6 sticky left-0 w-full h-[76px] top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_2px_6px_2px] z-50 ${
         open ? "bg-[#181f21]" : "bg-white"
       }`}
     >
