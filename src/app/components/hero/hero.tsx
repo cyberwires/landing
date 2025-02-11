@@ -5,15 +5,17 @@ import background from "../../../../public/hero-banner.jpg";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-[80vh] md:h-[110vh] bg-cover bg-center bg-no-repeat lg:bg-cover p-8"
+      className="relative w-full h-[80vh] bg-cover bg-center bg-no-repeat lg:bg-cover p-8"
       id="home"
     >
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute inset-0 bg-gray-900/50 z-0"></div>
+
+      <div className="absolute top-0 left-0 w-full h-full z-[-1]">
         <Image
           src={background}
           alt="logo"
           fill
-          style={{ objectFit: "cover" }}
+          className="object-cover"
           priority
         />
       </div>
@@ -32,7 +34,7 @@ export default function Hero() {
         <Link
           href="#contact-us"
           className="flex justify-center items-center text-base text-white bg-blue font-bold h-[52px] w-[130px] px-4 py-2 rounded-lg border-2 border-blue 
-          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white animate-slide-in-right font-bold"
+          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white animate-slide-in-right"
         >
           Contact Us
         </Link>

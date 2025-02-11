@@ -9,7 +9,7 @@ export const menu = [
   { name: "Home", href: "/" },
   { name: "Team", href: "#team" },
   { name: "Our Projects", href: "#projects" },
-  { name: "About Us", href: "/about" },
+  { name: "About Us", href: "#about" },
   { name: "FAQ", href: "#faq" },
 ];
 

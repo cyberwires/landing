@@ -2,11 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import { Roboto_Slab } from "next/font/google";
-
-const roboto_slab = Roboto_Slab({
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Vertex Solutions | Expert Software Development",
@@ -46,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto_slab.className} antialiased`}>
+      <body>
         <Header />
         <main>{children}</main>
         <Footer />

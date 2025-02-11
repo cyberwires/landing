@@ -24,6 +24,7 @@ export default {
         foreground: "var(--foreground)",
         green: "var(--green)",
         blue: "var(--blue)",
+        darkBlue: "var(--dark-blue)",
         "red-stone": {
           "900": "var(--red-stone)",
           "300": "var(--red-stone-light)",
