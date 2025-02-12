@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ProjectCard from "../project-card/project-card";
 import { projects } from "@/app/utils";
 import { ProjectData } from "@/app/types";
+import ArrowIcon from "@/app/icons/arrow-icon";
 
 const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +35,7 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
 
   return (
     <div>
-      <h2 className="text-darkBlue text-center lg:text-left font-bold text-xl lg:text-8xl mb-8 lg:mb-24">
+      <h2 className="text-darkBlue text-center lg:text-left text-xl lg:text-8xl mb-8 lg:mb-24">
         Our Projects
       </h2>
 
@@ -54,15 +55,15 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
         {/* Round Navigation Buttons */}
         <button
           onClick={prevSlide}
-          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white text-black w-16 h-16 rounded-full shadow-md"
+          className="absolute left-2 top-1/2 -translate-y-1/2 scale-x-[-1]"
         >
-          ◀
+          <ArrowIcon />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black w-16 h-16 rounded-full shadow-md"
+          className="absolute right-2 top-1/2 -translate-y-1/2 "
         >
-          ▶
+          <ArrowIcon />
         </button>
       </div>
 
