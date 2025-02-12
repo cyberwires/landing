@@ -3,7 +3,7 @@ import { menu } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import logo from "../../../../public/cropped_logo.png";
+import logo from "../../../../public/logo.png";
 import MobileHeader from "./mobile-header";
 import { Container } from "../container/container";
 
@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header
-      className={`p-6 sticky left-0 w-full h-[76px] top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_2px_6px_2px] z-50 ${
+      className={`p-6 sticky left-0 w-full h-[120px] top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_2px_6px_2px] z-50 ${
         open ? "bg-[#181f21]" : "bg-white"
       }`}
     >
@@ -24,9 +24,9 @@ export default function Header() {
         <div className="flex justify-center gap-36">
           <div className="w-full flex items-center justify-between ">
             {/* Logo */}
-            <div className="w-16 h-16">
+            <div className="w-[9rem] h-[9rem]">
               <Link href="/">
-                <Image src={logo} alt="logo" width={40} height={40} priority />
+                <Image src={logo} alt="logo" width={90} height={90} priority />
               </Link>
             </div>
 
