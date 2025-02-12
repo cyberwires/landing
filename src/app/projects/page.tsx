@@ -1,4 +1,6 @@
 import ContactUs from "../components/contact-us/contact-us";
+import { Container } from "../components/container/container";
+import PaddingContainer from "../components/padding-container/padding-container";
 import Projects from "../components/projects/projects";
 
 interface CompanyProjectsProps {
@@ -7,8 +9,12 @@ interface CompanyProjectsProps {
 
 const CompanyProjects: React.FC<CompanyProjectsProps> = ({ params }) => {
   return (
-    <section className="bg-light-grey pt-100" id="projects">
-      <Projects id={params} />
+    <section id="projects">
+      <PaddingContainer>
+        <Container>
+          <Projects id={params} />
+        </Container>
+      </PaddingContainer>
     </section>
   );
 };
