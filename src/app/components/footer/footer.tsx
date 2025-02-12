@@ -1,7 +1,7 @@
 import { menu } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../../public/cropped_logo.png";
+import logo from "../../../../public/logo.png";
 import linkedin from "../../../../public/linkedin.png";
 import upwork from "../../../../public/upwork.png";
 
@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="w-16 h-16">
           {" "}
           <Link href="/">
-            <Image src={logo} alt="logo" width={40} height={40} priority />
+            <Image src={logo} alt="logo" width={90} height={90} priority />
           </Link>
         </div>
         <nav>
