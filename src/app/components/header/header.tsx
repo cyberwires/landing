@@ -24,9 +24,9 @@ export default function Header() {
         <div className="flex justify-center gap-36">
           <div className="w-full flex items-center justify-between ">
             {/* Logo */}
-            <div className="w-16 h-16">
+            <div className="w-120 h-16">
               <Link href="/">
-                <Image src={logo} alt="logo" width={40} height={40} priority />
+                <Image src={logo} alt="logo" width={120} height={40} priority />
               </Link>
             </div>
 

@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <footer className="bg-light-grey p-6 lg:p-16">
       <div className="flex items-center justify-between mb-8 lg:mb-16">
-        <div className="w-16 h-16">
+        <div className="w-120 h-16">
           {" "}
           <Link href="/">
-            <Image src={logo} alt="logo" width={40} height={40} priority />
+            <Image src={logo} alt="logo" width={120} height={40} priority />
           </Link>
         </div>
         <nav>
