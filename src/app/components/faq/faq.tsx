@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { FaqItem } from "./faq-item";
+import PaddingContainer from "../padding-container/padding-container";
+import { Container } from "../container/container";
+import faqImage from "../../../../public/faq-image.svg";
 
 const faqs = [
   {
@@ -36,24 +39,35 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section className="bg-light-grey px-16 text-black pb-20" id="faq">
-      <div className="flex flex-col">
-        <div className="relative mx-auto mb-5 w-250 h-250">
-          <Image src="./logo.png" alt="logo" fill priority />
-        </div>
-        <h2 className="text-4xl font-bold lg:text-8xl mb-5 lg:mb-20 text-center">
-          Frequently asked questions
-        </h2>
-        <p className="text-2xl lg:text-4xl mb-5 lg:mb-20 text-center">
-          Whats happening around the World.
-        </p>
-      </div>
+    <section id="faq">
+      <PaddingContainer>
+        <Container>
+          <div className="flex justify-end relative">
+            <Image
+              src={faqImage}
+              alt="FAQ"
+              className="rounded-lg -z-10 min-w-[300px] max-w-[700px] w-full absolute top-0 left-0"
+            />
 
-      <div className="max-w-6xl mx-auto space-y-4">
-        {faqs.map((item, index) => (
-          <FaqItem key={index} data={item} />
-        ))}
-      </div>
+            <div className="flex flex-col gap-20">
+              <div className="flex flex-col gap-5 text-center lg:text-left">
+                <h2 className="text-darkBlue font-bold text-xl lg:text-8xl animate-slide-up">
+                  Frequently asked questions
+                </h2>
+                <p className="lg:text-3xl md:text-2xl text-base text-gray-500 animate-slide-in-left max-w-[600px] lg:max-w-[680px]">
+                  Whats happening around the World.
+                </p>
+              </div>
+
+              <div className="max-w-6xl mx-auto space-y-4">
+                {faqs.map((item, index) => (
+                  <FaqItem key={index} data={item} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </PaddingContainer>
     </section>
   );
 };
