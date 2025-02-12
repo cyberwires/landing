@@ -23,7 +23,7 @@ export default function Expertise() {
             />
 
             <div className="flex flex-col lg:flex-row items-center justify-between gap-28 lg:gap-56 relative w-full">
-              <div className="flex flex-col gap-10 text-center lg:text-left">
+              <div className="flex flex-col gap-5 text-center lg:text-left">
                 <h2 className="text-4xl lg:text-8xl animate-slide-in-right">
                   See what we can do for you
                 </h2>
