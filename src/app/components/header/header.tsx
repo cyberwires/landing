@@ -3,7 +3,7 @@ import { menu } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import logo from "../../../../public/logo.png";
+import logo from "../../../../public/cropped_logo.png";
 import MobileHeader from "./mobile-header";
 import { Container } from "../container/container";
 

@@ -1,7 +1,7 @@
 import { menu } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../../public/logo.png";
+import logo from "../../../../public/cropped_logo.png";
 import linkedin from "../../../../public/linkedin.png";
 import upwork from "../../../../public/upwork.png";
 
