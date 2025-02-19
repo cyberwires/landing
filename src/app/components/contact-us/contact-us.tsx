@@ -6,7 +6,7 @@ const ContactUs = () => {
       className="lg:flex lg:justify-center lg:gap-36 bg-light-grey px-16 text-white pb-20"
       id="contact-us"
     >
-      <div className="mb-10 lg:mb-0">
+      <div className="my-10 lg:mb-10">
         <h2 className="text-blue font-bold text-4xl lg:text-8xl mb-20 lg:mb-8">
           Contact Us!
         </h2>

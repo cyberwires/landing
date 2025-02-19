@@ -9,7 +9,7 @@ interface CompanyProjectsProps {
 
 const CompanyProjects: React.FC<CompanyProjectsProps> = ({ params }) => {
   return (
-    <section id="projects">
+    <section id="projects" className="bg-white">
       <PaddingContainer>
         <Container>
           <Projects id={params} />

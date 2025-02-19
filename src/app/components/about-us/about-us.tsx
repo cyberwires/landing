@@ -4,7 +4,7 @@ import { Container } from "../container/container";
 
 export default function AboutUs() {
   return (
-    <section id="about">
+    <section id="about" className="bg-white">
       <PaddingContainer>
         <Container>
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between lg:items-start gap-10 lg:gap-16">

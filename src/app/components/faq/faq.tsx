@@ -39,17 +39,17 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section id="faq">
+    <section id="faq" className="bg-white">
       <PaddingContainer>
         <Container>
           <div className="flex justify-end relative">
             <Image
               src={faqImage}
               alt="FAQ"
-              className="rounded-lg -z-10 min-w-[300px] max-w-[700px] w-full absolute top-0 left-0"
+              className="rounded-lg min-w-[300px] max-w-[700px] w-full absolute top-0 left-0"
             />
 
-            <div className="flex flex-col gap-20">
+            <div className="flex flex-col gap-20 z-10">
               <div className="flex flex-col gap-5 text-center lg:text-left">
                 <h2 className="text-darkBlue font-bold text-xl lg:text-8xl animate-slide-up">
                   Frequently asked questions
