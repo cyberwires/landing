@@ -44,9 +44,11 @@ const Project = async ({
         <Image src={logo} alt="logo" fill priority />
       </div>
 
-      <p className="text-mm lg:text-4xl text-center mb-10">{description}</p>
+      <p className="text-mm lg:text-4xl font-medium text-center mx-20 my-10">
+        {description}
+      </p>
 
-      <div className="flex justify-center gap-5">
+      <div className="flex justify-center gap-5 mb-10">
         <h3 className="text-base lg:text-4xl">Tech Stack:</h3>
         <ul className="flex gap-3">
           {stack.map((item, index) => (
