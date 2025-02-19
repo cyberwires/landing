@@ -13,7 +13,7 @@ const companies = [
 
 export default function Companies() {
   return (
-    <section>
+    <section className="bg-white">
       <PaddingContainer>
         <Container>
           <div className="flex justify-center h-fit w-full bg-white m-auto min-250 rounded-3xl">
