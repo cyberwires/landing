@@ -68,7 +68,7 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
       </div>
 
       {/* Desktop Layout (No Slider) */}
-      <div className="hidden lg:flex justify-between gap-10">
+      <div className="hidden lg:flex flex-wrap gap-40">
         {availableProjects.map((project, index) => (
           <ProjectCard key={index} data={project} />
         ))}

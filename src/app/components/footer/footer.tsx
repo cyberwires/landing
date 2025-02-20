@@ -11,7 +11,7 @@ import UpworkIcon from "@/app/icons/upwork-icon";
 
 const Footer = () => {
   return (
-    <footer className="bg-darkBlue px-6 py-10 lg:py-40">
+    <footer className="bg-darkBlue px-6 py-10 lg:pb-20 lg:pt-40">
       <Container>
         <div className="flex items-center flex-col sm:flex-row gap-20 justify-between mb-8 lg:mb-16">
           <div className="w-120 h-16">

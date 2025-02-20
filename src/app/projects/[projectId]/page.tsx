@@ -1,6 +1,9 @@
 import { projects } from "@/app/utils";
 import Image from "next/image";
 import CompanyProjects from "../page";
+import PaddingContainer from "@/app/components/padding-container/padding-container";
+import { Container } from "@/app/components/container/container";
+import image from "../../../../public/project.jpg";
 
 // Define the possible project IDs
 export const generateStaticParams = async () => {
@@ -14,7 +17,7 @@ export const generateStaticParams = async () => {
 
 const defaultProject = {
   name: "",
-  description: "",
+  description: [],
   stack: [],
   link: "",
   logo: "",
@@ -32,35 +35,69 @@ const Project = async ({
   const { name, description, logo, stack } = project ?? defaultProject;
 
   return (
-    <section className="pt-150 bg-light-grey text-black">
-      <h2 className="text-5xl lg:text-8xl capitalize text-center mb-12">
-        {name}
-      </h2>
+    <section className="bg-darkBlue text-white">
+      <PaddingContainer>
+        <Container>
+          <div className="flex flex-col items-center lg:items-stretch justify-between lg:flex-row gap-10 lg:gap-40">
+            <div className="flex flex-col justify-between gap-10 relative">
+              <div>
+                <h2 className="text-5xl lg:text-8xl capitalize text-center mb-12 animate-slide-up">
+                  {name}
+                </h2>
 
-      <div
-        className="flex justify-center relative mb-8 mx-auto w-200 h-200"
-        style={{ height: name === "OJT-Logbook" ? "6rem" : "20rem" }}
-      >
-        <Image src={logo} alt="logo" fill priority />
-      </div>
+                <div
+                  className={`flex justify-center relative mb-8 mx-auto animate-slide-up ${
+                    name === "OJT-Logbook" && "bg-white p-4 w-200 rounded-lg"
+                  }`}
+                >
+                  <Image
+                    src={logo}
+                    alt="logo"
+                    className={`w-200 ${
+                      name === "OJT-Logbook" ? "h-[6rem]" : "h-[20rem] "
+                    }`}
+                    priority
+                  />
+                </div>
+              </div>
 
-      <p className="text-mm lg:text-4xl font-medium text-center mx-20 my-10">
-        {description}
-      </p>
+              <div className="flex items-end justify-center lg:justify-start gap-5 mb-10 animate-slide-in-right ">
+                <h3 className="text-base text-slate-500 lg:text-4xl">
+                  Tech Stack:
+                </h3>
+                <ul className="flex gap-3">
+                  {stack.map((item, index) => (
+                    <li
+                      className="text-mm text-gray-700 lg:text-base flex items-center justify-center border-2 rounded-xl px-4 py-2 text-center h-10 bg-white"
+                      key={index}
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
-      <div className="flex justify-center gap-5 mb-10">
-        <h3 className="text-base lg:text-4xl">Tech Stack:</h3>
-        <ul className="flex gap-3">
-          {stack.map((item, index) => (
-            <li
-              className="text-mm lg:text-base border-2 rounded-xl px-4 text-center bg-white"
-              key={index}
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+            <div className="flex flex-col gap-10 max-w-[700px] xl:max-w-[800px]">
+              <Image
+                src={image}
+                alt="Project"
+                priority
+                className="rounded-lg min-w-[300px] min-h-[200px] max-h-[320px] h-full w-full object-cover object-[25%_55%] brightness-90 animate-slide-up"
+              />
+              {description.map((para, index) => (
+                <p
+                  key={index}
+                  className="text-base/10 text-center lg:text-left text-slate-100 animate-slide-in-right"
+                >
+                  {para}
+                </p>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </PaddingContainer>
+
       <CompanyProjects params={projectId as any} />
     </section>
   );
