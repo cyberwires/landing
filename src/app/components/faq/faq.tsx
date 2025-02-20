@@ -46,7 +46,7 @@ const Faq = () => {
             <Image
               src={faqImage}
               alt="FAQ"
-              className="rounded-lg min-w-[300px] max-w-[800px] min-h-[200px] max-h-[320px] h-full xl:min-h-[600px] w-full object-cover object-bottom m-auto"
+              className="rounded-lg min-w-[300px] max-w-[800px] min-h-[200px] max-h-[320px] h-full xl:min-h-[600px] w-full object-cover object-bottom m-auto animate-slide-up"
             />
 
             <div className="flex flex-col gap-20 min-w-auto xl:min-w-[600px]">

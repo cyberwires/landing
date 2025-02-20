@@ -46,7 +46,7 @@ export default function Expertise() {
                       </div>
                       <Link href="#contact-us">{name}</Link>
                     </div>
-                    <hr className="border-disabled border-gray-600 duration-300 mt-5" />
+                    <hr className="border-disabled border-gray-600 duration-300 my-5" />
                   </li>
                 ))}
               </ul>
