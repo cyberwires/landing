@@ -27,7 +27,7 @@ export default function Expertise() {
                 <h2 className="text-4xl lg:text-8xl animate-slide-in-right">
                   See what we can do for you
                 </h2>
-                <p className="lg:text-3xl md:text-2xl text-base text-gray-500 animate-slide-in-left max-w-[600px] lg:max-w-[680px]">
+                <p className="lg:text-[18px] text-base text-gray-500 animate-slide-in-left max-w-[600px] lg:max-w-[680px]">
                   We provide cutting-edge solutions tailored to your needs. From
                   idea to execution, we ensure seamless experiences and top-tier
                   performance.

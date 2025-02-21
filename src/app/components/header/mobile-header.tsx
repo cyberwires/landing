@@ -31,18 +31,18 @@ const MobileHeader = ({
         onClick={handleMenuOpen}
       >
         <span
-          className={`block w-8 h-1 transition-all duration-300 ${
-            open ? "rotate-45 translate-y-3 bg-slate-200" : "bg-slate-800"
+          className={`block w-8 h-1 transition-all duration-300 bg-slate-200 ${
+            open && "rotate-45 translate-y-3"
           }`}
         ></span>
         <span
-          className={`block w-8 h-1 transition-all duration-300 ${
-            open ? "opacity-0" : "bg-slate-800"
+          className={`block w-8 h-1 transition-all duration-300 bg-slate-200 ${
+            open && "opacity-0"
           }`}
         ></span>
         <span
-          className={`block w-8 h-1 transition-all duration-300 ${
-            open ? "-rotate-45 -translate-y-4 bg-slate-200" : "bg-slate-800"
+          className={`block w-8 h-1 transition-all duration-300 bg-slate-200 ${
+            open && "-rotate-45 -translate-y-4 "
           }`}
         ></span>
       </button>

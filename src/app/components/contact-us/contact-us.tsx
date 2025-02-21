@@ -19,7 +19,7 @@ const ContactUs = () => {
                 <h2 className="text-darkBlue font-bold text-xl lg:text-8xl animate-slide-up">
                   Contact Us!
                 </h2>
-                <p className="lg:text-3xl md:text-2xl text-base text-gray-500 animate-slide-in-left max-w-[600px] lg:max-w-[680px]">
+                <p className="lg:text-[18px] text-base text-gray-500 animate-slide-in-left max-w-[600px] lg:max-w-[680px]">
                   Do you want your app to be fast and to be delivered within the
                   shortest deadline? Contact us!
                 </p>

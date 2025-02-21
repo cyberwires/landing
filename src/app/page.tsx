@@ -64,13 +64,13 @@ export default function Home() {
     <>
       <Hero />
 
-      <Companies />
-
       <AboutUs />
 
       <Expertise />
 
       <CompanyProjects />
+
+      <Companies />
 
       <Faq />
 

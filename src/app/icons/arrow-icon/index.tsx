@@ -1,7 +1,7 @@
 const ArrowIcon = () => (
   <svg
     viewBox="0 0 24 24"
-    fill="#47acce"
+    fill="#119dd8"
     xmlns="http://www.w3.org/2000/svg"
     width={"45px"}
     height={"45px"}
