@@ -11,9 +11,9 @@ import UpworkIcon from "@/app/icons/upwork-icon";
 
 const Footer = () => {
   return (
-    <footer className="bg-darkBlue px-6 py-10 lg:pb-20 lg:pt-40">
+    <footer className="bg-darkBlue px-6 pt-10 pb-5">
       <Container>
-        <div className="flex items-center flex-col sm:flex-row gap-20 justify-between mb-8 lg:mb-16">
+        <div className="flex items-center flex-col sm:flex-row gap-20 justify-between mb-8">
           <div className="w-120 h-16">
             <Link href="/">
               <Image src={logo} alt="logo" width={120} height={40} priority />
@@ -34,12 +34,7 @@ const Footer = () => {
               ))}
             </ul>
           </nav>
-        </div>
-        <hr className="border-slate-500 border-1 mb-10" />
-        <div className="flex items-center justify-between">
-          <p className="text-sm lg:text-mm text-gray-300">
-            {new Date().getFullYear()} Vertex Solutions. All rights reserved. ®
-          </p>
+
           <div className="flex items-center gap-5">
             <Link href="https://www.linkedin.com/">
               <LinkedinIcon />
@@ -49,6 +44,10 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+        <hr className="border-slate-500 border-1 mb-5" />
+        <p className="text-sm lg:text-mm text-center text-gray-400">
+          {new Date().getFullYear()} Vertex Solutions. All rights reserved. ®
+        </p>
       </Container>
     </footer>
   );

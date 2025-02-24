@@ -23,7 +23,7 @@ const ArrowDownIcon = () => (
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-220.000000, -6684.000000)"
-          fill="#47acce"
+          fill="#119dd8"
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

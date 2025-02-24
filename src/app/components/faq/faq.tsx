@@ -54,7 +54,7 @@ const Faq = () => {
                 <h2 className="text-darkBlue font-bold text-xl lg:text-8xl animate-slide-up">
                   Frequently asked questions
                 </h2>
-                <p className="lg:text-3xl md:text-2xl text-base text-gray-500 animate-slide-in-left">
+                <p className="lg:text-[18px] text-base text-gray-500 animate-slide-in-left">
                   Whats happening around the World.
                 </p>
               </div>

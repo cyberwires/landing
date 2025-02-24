@@ -25,8 +25,9 @@ h1 {
   --light-grey: #f3f3f3;
   --grey: #3f3f3f;
   --disabled: #6d6d6d;
-  --blue: #47acce;
+  --blue: #119dd8; 
   --dark-blue: #0c1a28;
+  --dark: #0e1f2a;
 }
 
 @media (prefers-color-scheme: dark) {

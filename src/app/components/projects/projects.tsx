@@ -34,7 +34,7 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
   };
 
   return (
-    <div>
+    <section>
       <h2 className="text-darkBlue text-center lg:text-left font-bold text-xl lg:text-8xl mb-5 lg:mb-20 animate-slide-up">
         Our Projects
       </h2>
@@ -68,12 +68,12 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
       </div>
 
       {/* Desktop Layout (No Slider) */}
-      <div className="hidden lg:flex flex-wrap gap-40">
+      <div className="hidden lg:grid grid-cols-3 w-full gap-10 justify-items-start">
         {availableProjects.map((project, index) => (
           <ProjectCard key={index} data={project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

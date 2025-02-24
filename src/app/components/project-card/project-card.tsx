@@ -10,7 +10,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   return (
     <div className="bg-white text-darkBlue cursor-pointer mx-auto lg:mx-0 w-[300px] sm:w-[330px] xl:w-[360px] max-h-[500px]
     shadow-[0px_0.0625em_0.0625em_rgba(0,0,0,0.25),_0px_0.125em_0.5em_rgba(0,0,0,0.25),_0px_0px_0px_1px_rgba(255,255,255,0.1)_inset]
-    rounded-lg transition-transform duration-200 hover:scale-105 p-5">
+    rounded-lg transition-transform duration-200 p-5">
       {/* Image Container */}
       <div className="relative w-full h-200 mb-7">
         {/* Tech Tags */}

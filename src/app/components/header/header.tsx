@@ -15,11 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={`p-6 sticky left-0 w-full h-[76px] top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_2px_6px_2px] z-50 ${
-        open ? "bg-[#181f21]" : "bg-white"
-      }`}
-    >
+    <header className="py-4 px-6 sticky left-0 w-full top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_1px_3px_1px] z-50 bg-dark">
       <Container>
         <div className="flex justify-center gap-36">
           <div className="w-full flex items-center justify-between ">
@@ -37,7 +33,7 @@ export default function Header() {
                   <li className="relative" key={index}>
                     <Link
                       href={href}
-                      className="text-slate-800 font-bold relative overflow-hidden transition-all duration-200 group hover:text-blue"
+                      className="text-white font-bold relative overflow-hidden transition-all duration-200 group hover:text-blue"
                     >
                       {name}
                       <span className="absolute top-8 left-0 w-0 h-1 bg-blue transition-all duration-300 group-hover:w-full"></span>
