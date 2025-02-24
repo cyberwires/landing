@@ -8,8 +8,8 @@ const UpworkIcon = () => (
     <g id="SVGRepo_bgCarrier" strokeWidth="0" />
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-Linecap="round"
-      stroke-Linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <g id="SVGRepo_iconCarrier">
       <rect width="512" height="512" rx="15%" fill="#6fda44" />
