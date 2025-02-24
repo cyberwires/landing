@@ -1,15 +1,13 @@
-import { faGear } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Metadata } from "next";
-import Link from "next/link";
 import AboutUs from "./components/about-us/about-us";
 import Companies from "./components/companies/companies";
 import ContactUs from "./components/contact-us/contact-us";
 import Faq from "./components/faq/faq";
 import Hero from "./components/hero/hero";
 import CompanyProjects from "./projects/page";
-import { expertise } from "./utils";
 import Expertise from "./components/expertise/expertise";
+import Header from "./components/header/header";
+import { menu } from "./utils";
 
 export const metadata: Metadata = {
   title: {
@@ -62,6 +60,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Header menu={menu} />
+
       <Hero />
 
       <AboutUs />

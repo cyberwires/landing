@@ -17,12 +17,20 @@ export const menu = [
   { name: "FAQ", href: "#faq" },
 ];
 
+export const projects_menu = [
+  { name: "Home", href: "/" },
+  { name: "Team", href: "/#team" },
+  { name: "Our Projects", href: "/#projects" },
+  { name: "About Us", href: "/#about" },
+  { name: "FAQ", href: "/#faq" },
+];
+
 export const projects = [
   {
     name: "Academy",
     description: [
-      "This learning platform is designed for individuals who are committed to continuous growth and professional excellence. Whether you are just beginning your journey or striving to refine your expertise, it provides the knowledge, skills, and resources needed to help you succeed.", 
-      "With carefully curated courses, hands-on projects, and expert guidance, learners gain real-world insights that enhance their careers. The platform fosters a dynamic learning experience through interactive tools and a supportive community, enabling individuals to stay ahead in their fields.",  
+      "This learning platform is designed for individuals who are committed to continuous growth and professional excellence. Whether you are just beginning your journey or striving to refine your expertise, it provides the knowledge, skills, and resources needed to help you succeed.",
+      "With carefully curated courses, hands-on projects, and expert guidance, learners gain real-world insights that enhance their careers. The platform fosters a dynamic learning experience through interactive tools and a supportive community, enabling individuals to stay ahead in their fields.",
       "Here, learning is not just about acquiring knowledge but about mastering skills and achieving excellence in every endeavor."
     ],
 

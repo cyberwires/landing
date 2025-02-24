@@ -1,5 +1,4 @@
 "use client";
-import { menu } from "@/app/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -7,7 +6,12 @@ import logo from "../../../../public/logo.png";
 import MobileHeader from "./mobile-header";
 import { Container } from "../container/container";
 
-export default function Header() {
+interface MenuInterface {
+  name: string;
+  href: string;
+}
+
+export default function Header({ menu }: { menu: MenuInterface[] }) {
   const [open, setOpen] = useState<boolean>(false);
 
   const handleMenuOpen = (): void => {
