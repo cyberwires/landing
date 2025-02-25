@@ -40,11 +40,13 @@ export default function Expertise() {
                     key={index}
                     className="group transition-transform duration-300 text-white hover:scale-105 hover:text-blue lg:mb-10"
                   >
-                    <div className="flex items-center gap-10">
-                      <div className="bg-blue w-[50px] h-[50px] flex items-center justify-center rounded-lg">
-                        <Icon />
-                      </div>
-                      <Link href="#contact-us">{name}</Link>
+                    <div >
+                      <Link href="#contact-us" className="flex items-center gap-10">
+                        <div className="bg-blue w-[50px] h-[50px] flex items-center justify-center rounded-lg">
+                          <Icon />
+                        </div>
+                        {name}
+                      </Link>
                     </div>
                     <hr className="border-disabled border-gray-600 duration-300 my-5" />
                   </li>

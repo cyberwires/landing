@@ -49,11 +49,11 @@ const MobileHeader = ({
 
       {/* Mobile Menu */}
       <nav
-        className={`absolute top-[76px] left-0 w-[100%] h-[100vh] text-center p-4 md:hidden bg-transparent backdrop-blur-md transform transition-all duration-300
-          ${open ? "translate-x-0" : "-translate-x-full"}`}
+        className={`absolute top-[60px] left-0 w-[100%] h-[100vh] text-center p-4 md:hidden bg-transparent backdrop-blur-md transform transition-all duration-300
+    ${open ? "translate-x-0" : "-translate-x-full"}`}
         style={{
           backgroundImage:
-            "linear-gradient(rgba(28, 28, 28, 0.4), rgba(28, 28, 28, 0.3))",
+            "linear-gradient(to bottom, rgba(3, 18, 28, 0.6), rgba(3, 18, 28, 0.5)), linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(3, 18, 28, 0.4))",
         }}
       >
         <ul className="flex flex-col items-center justify-center gap-20 h-[60%] text-4xl text-center">

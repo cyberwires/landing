@@ -20,12 +20,12 @@ const Footer = () => {
             </Link>
           </div>
           <nav>
-            <ul className="flex flex-col sm:flex-row space-x-4 text-mm text-center items-center gap-10 lg:gap-36">
+            <ul className="flex flex-col sm:flex-row gap-x-4 text-mm text-center items-center gap-10 lg:gap-36">
               {menu.map(({ name, href }, index) => (
                 <li className="relative" key={index}>
                   <Link
                     href={href}
-                    className="text-white font-bold relative overflow-hidden transition-all duration-200 group hover:text-blue"
+                    className="text-white font-bold relative l-0 overflow-hidden transition-all duration-200 group hover:text-blue"
                   >
                     {name}
                     <span className="absolute top-8 left-0 w-0 h-1 bg-blue transition-all duration-300 group-hover:w-full"></span>

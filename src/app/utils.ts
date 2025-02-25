@@ -11,7 +11,7 @@ import MobileIcon from './icons/mobile-icon';
 
 export const menu = [
   { name: "Home", href: "/" },
-  { name: "Team", href: "#team" },
+  // { name: "Team", href: "#team" },
   { name: "Our Projects", href: "#projects" },
   { name: "About Us", href: "#about" },
   { name: "FAQ", href: "#faq" },
@@ -19,7 +19,7 @@ export const menu = [
 
 export const projects_menu = [
   { name: "Home", href: "/" },
-  { name: "Team", href: "/#team" },
+  // { name: "Team", href: "/#team" },
   { name: "Our Projects", href: "/#projects" },
   { name: "About Us", href: "/#about" },
   { name: "FAQ", href: "/#faq" },

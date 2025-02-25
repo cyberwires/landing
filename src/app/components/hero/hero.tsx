@@ -19,7 +19,7 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="flex flex-col gap-16 justify-center items-center h-full text-center">
+      <div className="flex flex-col gap-16 justify-center items-center h-[85%] text-center">
         <h1 className="text-white animate-slide-in-right">
           Let’s make <span className="text-blue">{`{ }`}</span>
           <br />
@@ -33,8 +33,8 @@ export default function Hero() {
 
         <Link
           href="#contact-us"
-          className="flex justify-center items-center text-base text-white bg-blue font-bold h-[52px] w-[130px] px-4 py-2 rounded-lg border-2 border-blue 
-          transition-all duration-300 hover:bg-blue hover:border-transparent hover:text-white animate-slide-in-right"
+          className="flex justify-center items-center text-base text-white bg-blue font-bold h-[42px] w-[110px] px-4 py-2 rounded-lg border-2 border-blue 
+          transition-all duration-300 hover:bg-transparent hover:text-blue animate-slide-in-right"
         >
           Contact Us
         </Link>
