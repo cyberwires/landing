@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Metadata } from "next";
 import Link from "next/link";
 import AboutUs from "./components/about-us/about-us";
-import Companies from "./components/companies/companies";
+import Companies from "./components/partners/partners";
 import ContactUs from "./components/contact-us/contact-us";
 import Faq from "./components/faq/faq";
 import Hero from "./components/hero/hero";
