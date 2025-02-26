@@ -38,6 +38,7 @@ const ContactUs = () => {
                     placeholder="Name"
                     className="text-black outline-0 bg-slate-50 text-base border border-slate-200 rounded-xl w-full p-4 h-20"
                     name="name"
+                    required
                   />
                   <input
                     placeholder="Email"
@@ -45,6 +46,9 @@ const ContactUs = () => {
                     name="email"
                     type="email"
                     id="email"
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                    title="Enter a valid email address (e.g., example@mail.com)"
+                    required
                   />
                 </div>
                 <textarea
@@ -90,10 +94,10 @@ const ContactUs = () => {
                   <div>
                     <p className="text-darkBlue text-base lg:text-lg">Email</p>
                     <Link
-                      href="mailto:sales@vertexglobal.com"
+                      href="mailto:sales@vertexsolution.dev"
                       className="text-blue hover:underline text-mm lg:text-base"
                     >
-                      sales@vertexglobal.com
+                      sales@vertexsolution.dev
                     </Link>
                   </div>
                 </div>
