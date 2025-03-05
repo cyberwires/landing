@@ -7,11 +7,11 @@ export default function Achievements() {
     <section className="bg-slate-100">
       <PaddingContainer>
         <Container>
-          <h2 className="text-darkBlue text-center font-bold text-xl lg:text-8xl mb-5 animate-slide-up">
-            Our Impact in Numbers
+          <h2 className="text-darkBlue text-center xl:text-left font-bold text-xl lg:text-8xl mb-5 animate-slide-up">
+            Our impact in numbers
           </h2>
-          <p className="lg:text-[18px] text-base text-gray-500 text-center animate-slide-in-left mb-20 m-auto max-w-[600px] lg:max-w-[900px]">
-            Delivering Excellence with a Passion for Innovation
+          <p className="lg:text-[18px] text-base text-gray-500 text-center xl:text-left animate-slide-in-left mb-20">
+            Delivering excellence with a passion for innovation!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-20 items-center justify-around bg-white p-16 xl:p-24 rounded-lg text-slate-800 text-base lg:text-lg font-bold shadow-lg animate-slide-down">

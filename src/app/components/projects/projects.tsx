@@ -35,8 +35,8 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
 
   return (
     <section>
-      <h2 className="text-darkBlue text-center lg:text-left font-bold text-xl lg:text-8xl mb-5 lg:mb-20 animate-slide-up">
-        Our Projects
+      <h2 className="text-darkBlue text-center xl:text-left font-bold text-xl lg:text-8xl mb-5 lg:mb-20 animate-slide-up">
+        Our projects
       </h2>
 
       {/* Mobile Slider */}

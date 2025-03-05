@@ -10,11 +10,11 @@ export default function AboutUs() {
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between lg:items-start gap-10 lg:gap-16">
             {/* Images */}
             <div className="flex flex-wrap justify-center lg:flex-nowrap ">
-              <div className="relative top-12 lg:top-20 w-120 md:w-200 h-120 md:h-200 xl:w-[321px] xl:h-[333px] xl:min-w-[321px] mr-2 md:mr-5 animate-slide-in-left">
+              <div className="relative top-12 lg:top-20 w-120 sm:w-200 h-120 sm:h-200 xl:w-[321px] xl:h-[333px] xl:min-w-[321px] mr-2 animate-slide-in-left">
                 <Image src="./team-work-2.png" alt="logo" fill priority />
               </div>
               <div className="w-max">
-                <div className="relative mb-2 md:mb-5 rounded-lg w-120 md:w-200 h-120 md:h-200 xl:w-[321px] xl:h-[292px] animate-slide-down">
+                <div className="relative mb-2 rounded-lg w-120 sm:w-200 h-120 sm:h-200 xl:w-[321px] xl:h-[292px] animate-slide-down">
                   <Image
                     src="./team-work-1.png"
                     alt="logo"
@@ -23,7 +23,7 @@ export default function AboutUs() {
                     className="rounded-lg"
                   />
                 </div>
-                <div className="relative w-120 md:w-200 h-20 md:h-28 xl:w-[321px] xl:h-[132px] animate-slide-in-right">
+                <div className="relative w-120 sm:w-200 h-20 sm:h-28 xl:w-[321px] xl:h-[132px] animate-slide-in-right">
                   <Image src="./team-work-3.png" alt="logo" fill priority />
                 </div>
               </div>
