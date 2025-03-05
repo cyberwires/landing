@@ -11,15 +11,16 @@ const MobileHeader = ({
   handleMenuOpen: () => void;
 }) => {
   useEffect(() => {
-    // Prevent scrolling when the menu is open
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
+    if (typeof window !== "undefined") {
+      // Prevent scrolling when the menu is open
+      document.body.style.overflow = open ? "hidden" : "auto";
     }
-    // Reset after the component unmounts
+    
+    // Reset on unmount
     return () => {
-      document.body.style.overflow = "auto";
+      if (typeof window !== "undefined") {
+        document.body.style.overflow = "auto";
+      }
     };
   }, [open]);
 

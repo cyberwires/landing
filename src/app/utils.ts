@@ -24,6 +24,11 @@ export const projects_menu = [
   { name: "About Us", href: "/#about" },
   { name: "FAQ", href: "/#faq" },
 ];
+export const achievements = [
+  { value: "7", label: "Successful Projects" },
+  { value: "11", label: "Skilled Professionals" },
+  { value: "50+", label: "Expert Consultations" },
+];
 
 export const projects = [
   {

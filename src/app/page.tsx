@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 import AboutUs from "./components/about-us/about-us";
-import Companies from "./components/partners/partners";
+import Achievements from "./components/achievements/achievements";
 import ContactUs from "./components/contact-us/contact-us";
+import Expertise from "./components/expertise/expertise";
 import Faq from "./components/faq/faq";
+import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
 import CompanyProjects from "./projects/page";
-import Expertise from "./components/expertise/expertise";
-import Header from "./components/header/header";
 import { menu } from "./utils";
 
 export const metadata: Metadata = {
@@ -70,7 +70,7 @@ export default function Home() {
 
       <CompanyProjects />
 
-      <Companies />
+      <Achievements />
 
       <Faq />
 

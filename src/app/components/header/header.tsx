@@ -19,7 +19,7 @@ export default function Header({ menu }: { menu: MenuInterface[] }) {
   };
 
   return (
-    <header className="py-4 px-6 sticky left-0 w-full top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_1px_3px_1px] z-50 bg-dark">
+    <header className="py-4 px-6 fixed left-0 w-full top-0 shadow-[rgba(60,64,67,0.3)_0px_1px_2px_0px,rgba(60,64,67,0.15)_0px_1px_3px_1px] z-50 bg-dark">
       <Container>
         <div className="flex justify-center gap-36">
           <div className="w-full flex items-center justify-between ">
