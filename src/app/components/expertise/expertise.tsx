@@ -1,11 +1,19 @@
+"use client";
+
 import { expertise } from "@/app/utils";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+import { useState } from "react";
 import { Container } from "../container/container";
 import PaddingContainer from "../padding-container/padding-container";
 
 export default function Expertise() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index); // Toggle open/close
+  };
+
   return (
     <section className="bg-darkBlue text-white">
       <PaddingContainer>
@@ -35,19 +43,32 @@ export default function Expertise() {
               </div>
 
               <ul className="relative text-lg w-[100%] max-w-500 lg:text-5xl text-disabled animate-slide-up">
-                {expertise.map(({ name, icon: Icon }, index) => (
+                {expertise.map(({ name, icon: Icon, description }, index) => (
                   <li
                     key={index}
-                    className="group transition-transform duration-300 text-white hover:scale-105 hover:text-blue lg:mb-10"
+                    className="group transition-transform duration-300 lg:mb-10"
                   >
-                    <div >
-                      <Link href="#contact-us" className="flex items-center gap-10">
-                        <div className="bg-blue w-[50px] h-[50px] flex items-center justify-center rounded-lg">
-                          <Icon />
-                        </div>
-                        {name}
-                      </Link>
+                    <button
+                      className={`flex items-center gap-10 transition-all duration-300 ${openIndex === index ? "text-blue" : "text-white hover:text-blue"
+                        }`}
+                      onClick={() => handleClick(index)}
+                    >
+                      <div className="bg-blue w-[50px] h-[50px] flex items-center justify-center rounded-lg">
+                        <Icon />
+                      </div>
+                      {name}
+                    </button>
+
+                    {/* Toggle description for correct item */}
+                    <div
+                      className={`transition-all duration-300 ease-in-out text-base text-white ${openIndex === index
+                          ? "max-h-96 opacity-100 p-3"
+                          : "max-h-0 opacity-0 p-0"
+                        } overflow-hidden`}
+                    >
+                      {description}
                     </div>
+
                     <hr className="border-disabled border-gray-600 duration-300 my-5" />
                   </li>
                 ))}

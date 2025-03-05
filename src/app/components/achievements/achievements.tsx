@@ -22,14 +22,14 @@ export default function Achievements() {
                 <span className="text-8xl text-blue">12</span><span>Years <br /> Of Experience</span>
               </div>
               {/* Decorative blurred elements for enhanced design */}
-              <div className="absolute left-[20px] bottom-[30px] rounded-full h-[120px] w-[120px] lg:h-[160px] lg:w-[160px] bg-cyan-400 blur-md"></div>
-              <div className="absolute left-[30px] bottom-[30px] rounded-full h-[40px] w-[40px] lg:h-[80px] lg:w-[80px] bg-cyan-200 blur-lg"></div>
+              <div className="absolute left-[20px] bottom-[30px] rounded-full h-[120px] w-[120px] lg:h-[160px] lg:w-[160px] bg-cyan-400 blur-md" />
+              <div className="absolute left-[30px] bottom-[30px] rounded-full h-[40px] w-[40px] lg:h-[80px] lg:w-[80px] bg-cyan-200 blur-lg" />
             </div>
 
             {/* Achievement statistics section */}
             <div className="flex flex-col md:flex-row gap-10 xl:gap-24">
               {achievements.map(({ value, label }, index) => (
-                <div key={index} className="flex flex-col gap-2 justify-between text-center ">
+                <div key={index} className="flex flex-col gap-5 justify-between text-center ">
                   <div className="text-blue text-5xl lg:text-6xl">{value}</div>
                   <div className="">{label}</div>
                 </div>

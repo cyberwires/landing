@@ -69,8 +69,8 @@ export const projects = [
 ];
 
 export const expertise = [
-  { name: "Product Design", icon: DesignIcon },
-  { name: "Web Application", icon: WebIcon },
-  { name: "Mobile Application", icon: MobileIcon },
-  { name: "Product Development", icon: DevelopmentIcon },
+  { name: "Product Design", icon: DesignIcon, description: "We design solutions that meet your business goals, providing the perfect combination of functionality, scalability, and innovation." },
+  { name: "Web Application", icon: WebIcon, description: "We build fast, scalable, and secure web applications using the latest technologies, ensuring an exceptional user experience across all devices." },
+  { name: "Mobile Application", icon: MobileIcon, description: "Our mobile app development services deliver intuitive and high-performance applications for both iOS and Android platforms, tailored to your business needs." },
+  { name: "Product Development", icon: DevelopmentIcon, description: "From concept to launch, we provide end-to-end product development, ensuring a seamless and efficient process with cutting-edge technology and best practices." },
 ];
