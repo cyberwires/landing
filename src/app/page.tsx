@@ -8,6 +8,7 @@ import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
 import CompanyProjects from "./projects/page";
 import { menu } from "./utils";
+import WorkingProcess from "./components/working-process/working-process";
 
 export const metadata: Metadata = {
   title: {
@@ -69,6 +70,8 @@ export default function Home() {
       <Expertise />
 
       <CompanyProjects />
+
+      <WorkingProcess />
 
       <Achievements />
 

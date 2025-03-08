@@ -31,7 +31,7 @@ export default function AboutUs() {
             {/* Text */}
             <div className="flex flex-col relative text-center lg:text-left max-w-[600px] lg:max-w-full">
               <h2 className="text-darkBlue font-bold text-xl lg:text-8xl mb-5 lg:mb-20 animate-slide-up">
-                About us
+                About Us
               </h2>
               <ul className="flex flex-col gap-5">
                 <li className="text-base lg:text-lg animate-slide-up">

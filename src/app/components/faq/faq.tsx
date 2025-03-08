@@ -46,13 +46,13 @@ const Faq = () => {
             <Image
               src={faqImage}
               alt="FAQ"
-              className="rounded-lg min-w-[300px] max-w-[800px] min-h-[200px] max-h-[320px] h-full xl:min-h-[600px] w-full object-cover object-bottom m-auto animate-slide-up"
+              className="rounded-lg min-w-[300px] max-w-[800px] min-h-[200px] max-h-[320px] h-full xl:min-h-[535px] w-full object-cover object-bottom m-auto animate-slide-up"
             />
 
             <div className="flex flex-col gap-20 min-w-auto xl:min-w-[600px]">
               <div className="flex flex-col gap-5 text-center xl:text-left">
                 <h2 className="text-darkBlue font-bold text-xl lg:text-8xl animate-slide-up">
-                  Frequently asked questions
+                  FAQ
                 </h2>
                 <p className="lg:text-[18px] text-base text-gray-500 animate-slide-in-left">
                   Whats happening around the World.

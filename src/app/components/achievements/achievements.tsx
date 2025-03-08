@@ -7,10 +7,10 @@ export default function Achievements() {
     <section className="bg-slate-100">
       <PaddingContainer>
         <Container>
-          <h2 className="text-darkBlue text-center xl:text-left font-bold text-xl lg:text-8xl mb-5 animate-slide-up">
-            Our impact in numbers
+          <h2 className="text-darkBlue text-center font-bold text-xl lg:text-8xl mb-5 animate-slide-up">
+            Our Numbers
           </h2>
-          <p className="lg:text-[18px] text-base text-gray-500 text-center xl:text-left animate-slide-in-left mb-20">
+          <p className="lg:text-[18px] text-base text-gray-500 text-center animate-slide-in-left mb-20">
             Delivering excellence with a passion for innovation!
           </p>
 

@@ -5,7 +5,7 @@ import background from "../../../../public/hero-banner.jpg";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-[80vh] bg-cover bg-center bg-no-repeat lg:bg-cover p-8"
+      className="relative w-full h-[85vh] bg-cover bg-center bg-no-repeat lg:bg-cover p-8"
       id="home"
     >
       <div className="absolute inset-0 bg-gray-900/50 z-0"></div>
