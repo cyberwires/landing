@@ -8,13 +8,13 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   return (
-    <div className="bg-white text-darkBlue cursor-pointer mx-auto lg:mx-0 w-[300px] sm:w-[330px] xl:w-[360px] max-h-[500px]
+    <div className="bg-white text-darkBlue cursor-pointer lg:mx-0 max-w-[310px] min-[500px]:max-w-[400px] max-h-[500px] 
     shadow-[0px_0.0625em_0.0625em_rgba(0,0,0,0.25),_0px_0.125em_0.5em_rgba(0,0,0,0.25),_0px_0px_0px_1px_rgba(255,255,255,0.1)_inset]
-    rounded-lg transition-transform duration-200 p-5">
+    rounded-lg transition-transform duration-200 p-5 mx-auto">
       {/* Image Container */}
-      <div className="relative w-full h-200 mb-7">
+      <div className="relative w-full mb-7">
         {/* Tech Tags */}
-        <div className="flex justify-end gap-5 relative z-10 p-5">
+        <div className="flex justify-end gap-5 relative z-10">
           {data.stack.map((item, index) => (
             <span
               key={index}
@@ -28,9 +28,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
         <Image
           src={data.background}
           alt="logo"
-          fill
-          priority
-          className="rounded-lg z-0 object-cover"
+
+          className="rounded-lg z-0 object-contain h-[250px]"
         />
       </div>
 

@@ -48,7 +48,7 @@ export const workStages = [
 
 export default function WorkingProcess() {
   return (
-    <section className="bg-darkBlue text-white">
+    <section className="bg-darkBlue text-white" id="working-process">
       <PaddingContainer>
         <Container>
           <h2 className="text-4xl lg:text-8xl animate-slide-in-right text-center pb-20">
@@ -58,7 +58,7 @@ export default function WorkingProcess() {
           <ul className="text-base grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 justify-between">
             {workStages.map(({ name, description, icon: Icon,  id }) => (
               <li key={id} className="relative flex flex-col gap-5 lg:gap-10">
-                <div><Icon /></div>
+                <Icon />
                 <div className="font-bold text-blue text-lg lg:text-5xl">{name}</div>
                 <div className="">{description}</div>
                 <div className="absolute right-0 -top-6 text-9xl  text-slate-500 opacity-50">0{id}</div>

@@ -1,27 +1,27 @@
 import DesignIcon from '@/app/icons/design-icon';
 import DevelopmentIcon from '@/app/icons/development-icon';
-import searching from "../../public/job-search.jpg";
+import academy from "../../public/academy-project2.png";
 import jtt_logo from "../../public/jtt-logo.png";
+import jtt from "../../public/jtt-project.png";
 import ojt_logo from "../../public/ojt-logo-full.png";
+import ojt from "../../public/ojt-project.png";
 import sp_logo from "../../public/sp-logo.png";
-import working from "../../public/tech-working.png";
-import learning from "../../public/technician-learning.jpg";
-import WebIcon from './icons/web-icon';
 import MobileIcon from './icons/mobile-icon';
+import WebIcon from './icons/web-icon';
 
 export const menu = [
   { name: "Home", href: "/" },
-  // { name: "Team", href: "#team" },
-  { name: "Our Projects", href: "/#projects" },
   { name: "About Us", href: "/#about" },
+  { name: "Working process", href: "/#working-process" },
+  { name: "Our Projects", href: "/#projects" },
   { name: "FAQ", href: "/#faq" },
 ];
 
 export const projects_menu = [
   { name: "Home", href: "/" },
-  // { name: "Team", href: "/#team" },
-  { name: "Our Projects", href: "/#projects" },
   { name: "About Us", href: "/#about" },
+  { name: "Working process", href: "/#working-process" },
+  { name: "Our Projects", href: "/#projects" },
   { name: "FAQ", href: "/#faq" },
 ];
 export const achievements = [
@@ -42,7 +42,7 @@ export const projects = [
     stack: ["React", "Node", "AWS"],
     link: "/projects/academy",
     logo: sp_logo,
-    background: learning,
+    background: academy,
   },
   {
     name: "OJT-Logbook",
@@ -53,7 +53,7 @@ export const projects = [
     stack: ["React", "Node", "AWS"],
     link: "/projects/ojt-logbook",
     logo: ojt_logo,
-    background: working,
+    background: ojt,
   },
   {
     name: "Join The Trades",
@@ -64,7 +64,7 @@ export const projects = [
     stack: ["PHP"],
     link: "/projects/join-the-trades",
     logo: jtt_logo,
-    background: searching,
+    background: jtt,
   },
 ];
 

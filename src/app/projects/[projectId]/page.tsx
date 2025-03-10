@@ -1,9 +1,8 @@
+import { Container } from "@/app/components/container/container";
+import PaddingContainer from "@/app/components/padding-container/padding-container";
 import { projects } from "@/app/utils";
 import Image from "next/image";
 import CompanyProjects from "../page";
-import PaddingContainer from "@/app/components/padding-container/padding-container";
-import { Container } from "@/app/components/container/container";
-import image from "../../../../public/project.jpg";
 
 // Define the possible project IDs
 export const generateStaticParams = async () => {
@@ -21,6 +20,7 @@ const defaultProject = {
   stack: [],
   link: "",
   logo: "",
+  background: ""
 };
 
 const Project = async ({
@@ -32,13 +32,13 @@ const Project = async ({
 
   const project = projects.find((item) => item.link.includes(projectId));
 
-  const { name, description, logo, stack } = project ?? defaultProject;
+  const { name, description, logo, stack, background } = project ?? defaultProject;
 
   return (
     <section className="bg-darkBlue text-white">
       <PaddingContainer>
         <Container>
-          <div className="flex flex-col items-center lg:items-stretch justify-between lg:flex-row gap-10 lg:gap-40">
+          <div className="flex flex-col items-center xl:items-stretch justify-between xl:flex-row gap-10">
             <div className="flex flex-col justify-between gap-10 relative">
               <div>
                 <h2 className="text-5xl lg:text-8xl capitalize text-center mb-12 animate-slide-up">
@@ -46,19 +46,28 @@ const Project = async ({
                 </h2>
 
                 <div
-                  className={`flex justify-center relative mb-8 mx-auto animate-slide-up ${
-                    name === "OJT-Logbook" && "bg-white p-4 w-200 rounded-lg"
-                  }`}
+                  className={`flex justify-center relative mb-8 mx-auto animate-slide-up ${name === "OJT-Logbook" && "bg-white p-4 w-200 rounded-lg"
+                    }`}
                 >
                   <Image
                     src={logo}
                     alt="logo"
-                    className={`w-200 ${
-                      name === "OJT-Logbook" ? "h-[6rem]" : "h-[20rem] "
-                    }`}
+                    className={`w-200 ${name === "OJT-Logbook" ? "h-[6rem]" : "h-[20rem] "
+                      }`}
                     priority
                   />
                 </div>
+              </div>
+
+              <div className="flex flex-col gap-10 max-w-[800px]">
+                {description.map((para, index) => (
+                  <p
+                    key={index}
+                    className="text-base/10 text-center lg:text-left text-slate-100 animate-slide-in-right"
+                  >
+                    {para}
+                  </p>
+                ))}
               </div>
 
               <div className="flex items-end justify-center lg:justify-start gap-5 mb-10 animate-slide-in-right ">
@@ -78,21 +87,13 @@ const Project = async ({
               </div>
             </div>
 
-            <div className="flex flex-col gap-10 max-w-[700px] xl:max-w-[800px]">
+            <div className="flex flex-col gap-10">
               <Image
-                src={image}
+                src={background}
                 alt="Project"
                 priority
-                className="rounded-lg min-w-[300px] min-h-[200px] max-h-[320px] h-full w-full object-cover object-[25%_55%] brightness-90 animate-slide-up"
+                className="h-full w-full object-contain animate-slide-up max-w-[800px]"
               />
-              {description.map((para, index) => (
-                <p
-                  key={index}
-                  className="text-base/10 text-center lg:text-left text-slate-100 animate-slide-in-right"
-                >
-                  {para}
-                </p>
-              ))}
             </div>
           </div>
         </Container>
