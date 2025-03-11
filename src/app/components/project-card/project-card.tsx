@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   return (
-    <div className="bg-white text-darkBlue lg:mx-0 max-w-[310px] min-[500px]:max-w-[400px] min-h-[460px]
+    <div className="bg-white text-darkBlue lg:mx-0 max-w-[310px] min-[500px]:max-w-[400px] min-h-[440px]
     shadow-[0px_0.0625em_0.0625em_rgba(0,0,0,0.25),_0px_0.125em_0.5em_rgba(0,0,0,0.25),_0px_0px_0px_1px_rgba(255,255,255,0.1)_inset]
     rounded-lg transition-transform duration-200 p-5 mx-auto">
       {/* Image Container */}
@@ -34,12 +34,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       </div>
 
       {/* Text and Button */}
-      <div className="">
+      <div>
         <div className="font-bold text-blue text-lg">{data.name}</div>
-        <p className="text-base mb-11 line-clamp-2">
+        <p className="text-base mb-11 overflow-hidden text-ellipsis whitespace-nowrap">
           {data.description}
         </p>
-
         <Link
           href={data.link}
           className="border-2 border-blue py-4 px-7 rounded-lg font-bold text-mm text-blue hover:bg-blue hover:text-white transition-colors"
@@ -47,6 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           See More
         </Link>
       </div>
+
     </div>
   );
 };
