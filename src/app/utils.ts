@@ -6,6 +6,8 @@ import jtt from "../../public/jtt-project.png";
 import ojt_logo from "../../public/ojt-logo-full.png";
 import ojt from "../../public/ojt-project.png";
 import sp_logo from "../../public/sp-logo.png";
+import dvs_logo from "../../public/dvs-logo.png";
+import dvs from "../../public/dvs-project.png";
 import MobileIcon from './icons/mobile-icon';
 import WebIcon from './icons/web-icon';
 
@@ -65,6 +67,17 @@ export const projects = [
     link: "/projects/join-the-trades",
     logo: jtt_logo,
     background: jtt,
+  },
+  {
+    name: "Custom Repair Service",
+    description: [
+      "Interactive admin platform for auditing car maintenance and providing various types of car care and services. The admin panel helps managers maintain a high level of communication with customers and provide timely feedback and report the status of the car.",
+      "In addition, the platform provides the ability to view the service history, which in turn allows you to get the entire and tory of the car service when sold to a new owner."
+    ],
+    stack: ["React", "Node", "AWS"],
+    link: "/projects/custom-repair-service",
+    logo: dvs_logo,
+    background: dvs,
   },
 ];
 

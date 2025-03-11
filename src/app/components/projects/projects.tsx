@@ -1,36 +1,37 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ProjectCard from "../project-card/project-card";
 import { projects } from "@/app/utils";
 import { ProjectData } from "@/app/types";
 import ArrowIcon from "@/app/icons/arrow-icon";
 
 const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
+  // Filter available projects
   const availableProjects = projects.reduce<ProjectData[]>((acc, val) => {
     const hasProject = val.link.includes(id || ("" as any));
-
-    if (!id) {
-      acc.push(val);
-    }
-
-    if (!hasProject) {
-      acc.push(val);
-    }
-
+    if (!id || !hasProject) acc.push(val);
     return acc;
   }, []);
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === availableProjects.length - 1 ? 0 : prevIndex + 1
-    );
+
+  const scrollLeft = () => {
+    if (sliderRef.current) {
+      const cardWidth = sliderRef.current.firstChild
+        ? (sliderRef.current.firstChild as HTMLElement).clientWidth + 20 // Adjust for gap
+        : 200; // Default width in case no items
+      sliderRef.current.scrollBy({ left: -cardWidth, behavior: "smooth" });
+    }
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? availableProjects.length - 1 : prevIndex - 1
-    );
+  // Scroll right (next)
+  const scrollRight = () => {
+    if (sliderRef.current) {
+      const cardWidth = sliderRef.current.firstChild
+        ? (sliderRef.current.firstChild as HTMLElement).clientWidth + 20
+        : 200;
+      sliderRef.current.scrollBy({ left: cardWidth, behavior: "smooth" });
+    }
   };
 
   return (
@@ -39,39 +40,32 @@ const Projects = ({ id }: { id?: Promise<any> | undefined }) => {
         Our Projects
       </h2>
 
-      {/* Mobile Slider */}
-      <div className="relative overflow-hidden lg:hidden">
+      {/* Scrollable Slider */}
+      <div className="relative">
         <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          ref={sliderRef}
+          className="flex gap-10 overflow-hidden whitespace-nowrap scroll-smooth px-5"
         >
           {availableProjects.map((project, index) => (
-            <div key={index} className="w-full my-10 flex-shrink-0">
+            <div key={index} className="my-10 inline-block min-w-[320px] min-[500px]:min-w-[400px]">
               <ProjectCard data={project} />
             </div>
           ))}
         </div>
 
-        {/* Round Navigation Buttons */}
+        {/* Navigation Buttons */}
         <button
-          onClick={prevSlide}
+          onClick={scrollLeft}
           className="absolute left-2 top-1/2 -translate-y-1/2 scale-x-[-1]"
         >
           <ArrowIcon />
         </button>
         <button
-          onClick={nextSlide}
-          className="absolute right-2 top-1/2 -translate-y-1/2 "
+          onClick={scrollRight}
+          className="absolute right-2 top-1/2 -translate-y-1/2"
         >
           <ArrowIcon />
         </button>
-      </div>
-
-      {/* Desktop Layout (No Slider) */}
-      <div className="hidden lg:grid grid-cols-3 w-full gap-10 justify-items-start">
-        {availableProjects.map((project, index) => (
-          <ProjectCard key={index} data={project} />
-        ))}
       </div>
     </section>
   );

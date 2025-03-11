@@ -7,7 +7,7 @@ import CompanyProjects from "../page";
 // Define the possible project IDs
 export const generateStaticParams = async () => {
   // Replace with your actual data source
-  const projectIds = ["academy", "ojt-logbook", "join-the-trades"];
+  const projectIds = ["academy", "ojt-logbook", "join-the-trades", "custom-repair-service"];
 
   return projectIds.map((id) => ({
     projectId: id,
@@ -45,18 +45,20 @@ const Project = async ({
                   {name}
                 </h2>
 
-                <div
-                  className={`flex justify-center relative mb-8 mx-auto animate-slide-up ${name === "OJT-Logbook" && "bg-white p-4 w-200 rounded-lg"
-                    }`}
-                >
-                  <Image
-                    src={logo}
-                    alt="logo"
-                    className={`w-200 ${name === "OJT-Logbook" ? "h-[6rem]" : "h-[20rem] "
+                {name === "Custom Repair Service" ? null :
+                  <div
+                    className={`flex justify-center relative mb-8 mx-auto animate-slide-up ${name === "OJT-Logbook" && "bg-white p-4 w-200 rounded-lg"
                       }`}
-                    priority
-                  />
-                </div>
+                  >
+                    <Image
+                      src={logo}
+                      alt="logo"
+                      className={`w-200 ${name === "OJT-Logbook" ? "h-[6rem]" : "h-[20rem]"
+                        }`}
+                      priority
+                    />
+                  </div>
+                }
               </div>
 
               <div className="flex flex-col gap-10 max-w-[800px]">

@@ -55,7 +55,7 @@ export default function WorkingProcess() {
             Working Process
           </h2>
 
-          <ul className="text-base grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 justify-between">
+          <ul className="text-base grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 justify-between animate-slide-up">
             {workStages.map(({ name, description, icon: Icon,  id }) => (
               <li key={id} className="relative flex flex-col gap-5 lg:gap-10">
                 <Icon />
