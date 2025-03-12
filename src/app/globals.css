@@ -34,6 +34,11 @@ section {
   scroll-margin-top: 64px; 
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #119dd8 !important; /* Replace with your desired color */
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

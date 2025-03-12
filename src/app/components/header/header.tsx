@@ -30,7 +30,7 @@ export default function Header({ menu }: { menu: MenuInterface[] }) {
 
             {/* Desktop Navigation */}
             <nav>
-              <ul className="hidden md:flex space-x-4 text-base gap-24 xl:gap-36">
+              <ul className="hidden lg:flex space-x-4 text-base gap-24 xl:gap-36">
                 {menu.map(({ name, href }, index) => (
                   <li className="relative" key={index}>
                     <Link
@@ -50,7 +50,7 @@ export default function Header({ menu }: { menu: MenuInterface[] }) {
             {/* Contact Button (visible for all) */}
             <Link
               href="#contact-us"
-              className="hidden md:flex justify-center items-center font-bold h-[42px] w-[110px] px-4 py-2 rounded-lg border-2 
+              className="hidden lg:flex justify-center items-center font-bold h-[42px] w-[110px] px-4 py-2 rounded-lg border-2 
           transition-all duration-300 bg-blue border-transparent text-white text-base hover:bg-transparent hover:text-blue hover:border-blue"
             >
               Contact Us

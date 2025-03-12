@@ -20,8 +20,7 @@ const ContactUs = () => {
                 Contact Us!
               </h2>
               <p className="lg:text-[18px] text-base text-gray-500 animate-slide-in-left max-w-[600px] m-auto lg:m-0 lg:max-w-[680px]">
-                Do you want your app to be fast and to be delivered within the
-                shortest deadline? Contact us!
+                Drop a message to our team to see how we can help you!
               </p>
             </div>
 

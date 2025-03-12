@@ -28,7 +28,7 @@ const MobileHeader = ({
     <>
       {/* Burger Menu Icon (visible on mobile) */}
       <button
-        className="md:hidden flex flex-col justify-between w-8 h-8 relative"
+        className="lg:hidden flex flex-col justify-between w-8 h-8 relative"
         onClick={handleMenuOpen}
       >
         <span
